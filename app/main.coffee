@@ -1,5 +1,5 @@
 translate = require 't7e'
-enUs = require './translations/en_us'
+enUs = require './lib/en-us'
 translate.load enUs
 
 $ = window.jQuery
@@ -15,25 +15,13 @@ Profile = require './controllers/profile'
 Api = require 'zooniverse/lib/api'
 Project  = require 'zooniverse/models/project'
 
-seasons = require './lib/seasons'
 TopBar = require 'zooniverse/controllers/top-bar'
 Footer = require 'zooniverse/controllers/footer'
 User = require 'zooniverse/models/user'
 
-{Stack} = require 'spine/lib/manager'
+{ Stack } = require 'spine/lib/manager'
 ContentPage = require './controllers/content_page'
 feedbackContent = require './views/feedback_page'
-
-t7e = require 't7e'
-enUs = require './translations/en_us'
-LanguageManager = require 'zooniverse/lib/language-manager'
-languageManager = new LanguageManager
-  translations:
-    en: label: 'English', strings: enUs
-
-languageManager.on 'change-language', (e, code, strings) ->
-  t7e.load strings
-  t7e.refresh()
 
 app = {}
 api = new Api project: 'serengeti'

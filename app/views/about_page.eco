@@ -8,9 +8,6 @@
   <div class='secondary-content'>
     <nav class='sub-nav-about'>
       <button name='info'><%- translate 'span', 'about.info.nav' %></button>
-      <button name='about'><%- translate 'span', 'about.about.nav' %></button>
-      <button name='organizations'><%- translate 'span', 'about.organizations.nav' %></button>
-      <button name='team'><%- translate 'span', 'about.team.nav' %></button>
     </nav>
   </div>
 
@@ -20,32 +17,12 @@
         <%- translate 'h1', 'about.info.header' %>
         <%- translate 'p', 'about.info.p' %>
       </div>
-
-      <div class='content sub-nav-about-about'>
-        <%- translate 'h1', 'about.about.header' %>
-        <%- translate 'p', 'about.about.p' %>
-      </div>
-
-      <div class='content sub-nav-about-organizations'>
-        <%- translate 'h1', 'about.organizations.header' %>
-
-        <%- translate 'h2', 'about.organizations.adler.header' %>
-        <%- translate 'p', 'about.organizations.adler.p' %>
-
-        <%- translate 'h2', 'about.organizations.lincolnParkZoo.header' %>
-        <%- translate 'p', 'about.organizations.lincolnParkZoo.p' %>
-      </div>
-
-      <div class='content sub-nav-about-team'>
-        <%- translate 'h1', 'about.team.header' %>
-      </div>
     </div>
 
     <div class='right-column'>
       <div class='content'>
         <%- translate 'h1', 'about.connect.header' %>
         <a href='#/classify'><%- translate 'button', 'about.connect.action' %></a>
-        <%- translate 'p', 'about.connect.social' %>
       </div>
     </div>
   </div>

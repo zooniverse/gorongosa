@@ -8,8 +8,8 @@ module.exports =
     blog: 'Blog'
 
   home:
-    heading: 'Welcome to Snapshot Chicago'
-    rightBannerHeader: "What is Snapshot Chicago?"
+    heading: 'Welcome to Snapshot Wisconsin'
+    rightBannerHeader: "What is Snapshot Wisconsin?"
     content: '''
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -30,11 +30,11 @@ module.exports =
         and to find out when more images from the Serengeti are available.
       </p>
     '''
-    action: 'Start classifying'
+    action: 'Get Started'
     currentStatus: '<span class="classification-count">0</span> classifications by <span class="user-count">0</span> volunteers'
 
     stats:
-      header: "SNAPSHOT CHICAGO Classification Statistics"
+      header: "SNAPSHOT WISCONSIN Classification Statistics"
       activeUsers: "Active Users"
       crittersIdentified: "Critters Identified"
       totalImages: "Images Total"
@@ -199,377 +199,132 @@ module.exports =
       science: 'Good job! Our science team needs your classifications to understand how different animals coexist in the Serengeti.'
 
   animals:
-    beaver:
-      label: 'Beaver'
-      description: '''
-        Describe Beaver
-    '''
-
-    bike:
-      label: 'Bike'
-      description: '''
-        Describe Bike
-    '''
-
-    car:
-      label: 'Car'
-      description: '''
-        Describe Car
-    '''
-
-    chipmunk:
-      label: 'Chipmunk'
-      description: '''
-        Describe Chipmunk
-    '''
-
+    amphibiansAndReptiles:
+      label: 'Amphibians and Reptiles'
+      description: 'description'
+    badgerAmerican:
+      label: 'Badger, American'
+      description: 'description'
+    bearBlack:
+      label: 'Bear, Black'
+      description: 'description'
+    beaverAmerican:
+      label: 'Beaver, American'
+      description: 'description'
+    birds:
+      label: 'Bird'
+      description: 'description'
+    bobcat:
+      label: 'Bobcat'
+      description: 'description'
+    catDomestic:
+      label: 'Cat, Domestic'
+      description: 'description'
+    chimpmunksAndSquirrels:
+      label: 'Chimpmunks and Squirrels'
+      description: 'description'
+    cottontailEastern:
+      label: 'Cottontail, Eastern'
+      description: 'description'
+    cougar:
+      label: 'Cougar'
+      description: 'description'
     coyote:
       label: 'Coyote'
-      description: '''
-        Describe Coyote
-    '''
-
-    deer:
+      description: 'description'
+    craneSandhill:
+      label: 'Crane, Sandhill'
+      description: 'description'
+    craneWhooping:
+      label: 'Crane, Whooping'
+      description: 'description'
+    deerWhiteTailed:
       label: 'Deer'
-      description: '''
-        Describe Deer
-    '''
-
-    domCat:
-      label: 'Cat, Domestic'
-      description: '''
-        Describe Cat, Domestic
-    '''
-
-    domDog:
+      description: 'description'
+    dogDomestic:
       label: 'Dog, Domestic'
-      description: '''
-        Describe Dog, Domestic
-    '''
-
-    flyingSquirrel:
-      label: 'Squirrel, Flying'
-      description: '''
-        Describe Squirrel, Flying
-    '''
-
-    foxSquirrel:
-      label: 'Squirrel, Fox'
-      description: '''
-        Describe Squirrel, Fox
-    '''
-
-    grayFox:
+      description: 'description'
+    elk:
+      label: 'Elk'
+      description: 'description'
+    fisher:
+      label: 'Fisher'
+      description: 'description'
+    foxGray:
       label: 'Fox, Gray'
-      description: '''
-        Describe Fox, Gray
-    '''
-
-    graySquirrel:
-      label: 'Squirrel, Gray'
-      description: '''
-        Describe Squirrel, Gray
-    '''
-
-    horse:
-      label: 'Horse'
-      description: '''
-        Describe Horse
-    '''
-
+      description: 'description'
+    foxRed:
+      label: 'Fox, Red'
+      description: 'description'
+    grouse:
+      label: 'Grouse'
+      description: 'description'
+    hareSnowshoe:
+      label: 'Hare, Snowshoe'
+      description: 'description'
     human:
       label: 'Human'
-      description: '''
-        Describe Human
-    '''
-
-    livestock:
-      label: 'Livestock'
-      description: '''
-        Describe Livestock
-    '''
-
-    mink:
-      label: 'Mink'
-      description: '''
-        Describe Mink
-    '''
-
-    mouse:
-      label: 'Mouse'
-      description: '''
-        Describe Mouse
-    '''
-
-    mower:
-      label: 'Mower'
-      description: '''
-        Describe Mower
-    '''
-
+      description: 'description'
+    jackrabbitWhiteTailed:
+      label: 'Jackrabbit, White Tailed'
+      description: 'description'
+    lynxCanada:
+      label: 'Lynx'
+      description: 'description'
+    martenAmerican:
+      label: 'Marten, American'
+      description: 'description'
+    minkAmerican:
+      label: 'Mink, American'
+      description: 'description'
+    moose:
+      label: 'Moose'
+      description: 'description'
     muskrat:
       label: 'Muskrat'
-      description: '''
-        Describe Muskrat
-    '''
-
-    opossum:
-      label: 'Opossum'
-      description: '''
-        Describe Opossum
-    '''
-
-    otherVehicle:
-      label: 'Vehicle, Other'
-      description: '''
-        Describe Vehicle, Other
-    '''
-
-    rabbit:
-      label: 'Rabbit'
-      description: '''
-        Describe Rabbit
-    '''
-
-    raccoon:
-      label: 'Raccoon'
-      description: '''
-        Describe Raccoon
-    '''
-
-    rat:
-      label: 'Rat'
-      description: '''
-        Describe Rat
-    '''
-
-    redFox:
-      label: 'Fox, Red'
-      description: '''
-        Describe Fox, Red
-    '''
-
-    skunk:
-      label: 'Skunk'
-      description: '''
-        Describe Skunk
-    '''
-
-    woodChuck:
-      label: 'Wood Chuck'
-      description: '''
-        Describe Wood Chuck
-    '''
-
-    melanisticGraySquirrel:
-      label: 'Squirrel, Melanistic Gray'
-      description: '''
-        Describe Squirrel, Melanistic Gray
-    '''
-
-
-  differences:
-    beaver:
-      muskrat: '''
-      to do description
-      '''
-        
-      woodchuck: '''
-      to do description
-      '''
-        
-      mink: '''
-      to do description
-      '''
-        
-    chipmunk:
-      graySquirrel: '''
-      to do description
-      '''
-        
-      foxSquirrel: '''
-      to do description
-      '''
-        
-    coyote:
-      domDog: '''
-      to do description
-      '''
-        
-      grayFox: '''
-      to do description
-      '''
-        
-      redFox: '''
-      to do description
-      '''
-        
-    deer:
-      horse: '''
-      to do description
-      '''
-        
-    domCat:
-      raccoon: '''
-      to do description
-      '''
-        
-    domDog:
-      coyote: '''
-      to do description
-      '''
-        
-      grayFox: '''
-      to do description
-      '''
-        
-      redFox: '''
-      to do description
-      '''
-        
-    flyingSquirrel:
-      mouse: '''
-      to do description
-      '''
-        
-      graySquirrel: '''
-      to do description
-      '''
-        
-      foxSquirrel: '''
-      to do description
-      '''
-        
-      rat: '''
-      to do description
-      '''
-        
-    foxSquirrel:
-      graySquirrel: '''
-      to do description
-      '''
-        
-    grayFox:
-      domDog: '''
-      to do description
-      '''
-        
-      coyote: '''
-      to do description
-      '''
-        
-      redFox: '''
-      to do description
-      '''
-        
-    graySquirrel:
-      foxSquirrel: '''
-      to do description
-      '''
-        
-    horse:
-      deer: '''
-      to do description
-      '''
-        
-    mink:
-      muskrat: '''
-      to do description
-      '''
-        
-      beaver: '''
-      to do description
-      '''
-        
-      woodChuck: '''
-      to do description
-      '''
-        
-    mouse:
-      rat: '''
-      to do description
-      '''
-        
-    muskrat:
-      mink: '''
-      to do description
-      '''
-        
-      beaver: '''
-      to do description
-      '''
-        
-      woodChuck: '''
-      to do description
-      '''
-        
-    opossum:
-      rat: '''
-      to do description
-      '''
-        
-      raccoon: '''
-      to do description
-      '''
-        
-    rabbit:
-      opossum: '''
-      to do description
-      '''
-        
-    raccoon:
-      opossum: '''
-      to do description
-      '''
-        
-      domCat: '''
-      to do description
-      '''
-        
-    rat:
-      mouse: '''
-      to do description
-      '''
-        
-      opossum: '''
-      to do description
-      '''
-        
-    redFox:
-      grayFox: '''
-      to do description
-      '''
-        
-      domCat: '''
-      to do description
-      '''
-        
-      coyote: '''
-      to do description
-      '''
-        
-    skunk:
-      raccoon: '''
-      to do description
-      '''
-        
-    woodChuck:
-      mink: '''
-      to do description
-      '''
-        
-      beaver: '''
-      to do description
-      '''
-        
-      muskrat: '''
-      to do description
-      '''
-        
-    melanisticGraySquirrel:
-      mink: '''
-      to do description
-      '''
+      description: 'description'
+    opposumVirginia:
+      label: 'Opposum, Virginia'
+      description: 'description'
+    otherDomestic:
+      label: 'Other Domestic'
+      description: 'description'
+    otter:
+      label: 'Otter'
+      description: 'description'
+    pheasentRingNecked:
+      label: 'Pheasent'
+      description: 'description'
+    pigFeral:
+      label: 'Pig, Feral'
+      description: 'description'
+    porcupineNorthAmerican:
+      label: 'Porcupine'
+      description: 'description'
+    racoonNorthern:
+      label: 'Racoon'
+      description: 'description'
+    skunkStriped:
+      label: 'Skunk, Striped'
+      description: 'description'
+    spottedSkunkEastern:
+      label: 'Skunk, Spotted'
+      description: 'description'
+    turkeyWild:
+      label: 'Turkey'
+      description: 'description'
+    weasel:
+      label: 'Weasel'
+      description: 'description'
+    wolfGray:
+      label: 'Wolf, Gray'
+      description: 'description'
+    wolverine:
+      label: 'Wolverine'
+      description: 'description'
+    woodchuck:
+      label: 'Woodchuck'
+      description: 'description'
 
   characteristics:
     like: 'Looks like...'
@@ -577,11 +332,9 @@ module.exports =
     tail: 'Tail'
     build: 'Build'
     
-
   characteristicValues:
     likeCatDog: 'Cat Dog'
     likeRodent: 'Rodent'
-    likeManMade: 'Vehicles'
     likeOther: 'Other'
     coatTanYellow: 'Tan Yellow'
     coatRedBrown: 'Red Brown'
@@ -610,11 +363,9 @@ module.exports =
   about:
     info:
       nav: "Info"
-      header: "What is Snapshot Chicago?"
+      header: "What is Snapshot Wisconsin?"
       p: """
-        Snapshot Chicago is a collaboration between two of Chicago’s venerated institutions, born of the desire to get everyone involved in the scientific process. 
-        The project aims to achieve a greater understanding of how our urban development affects local biodiversity.
-        Any can participate and help us learn about this great city we live in.
+        Nunc lacinia, felis ut rutrum facilisis, mi ante commodo libero, a volutpat nisl dolor blandit sapien. Pellentesque iaculis dignissim venenatis. Vivamus felis massa, convallis eget quam id, mollis posuere lorem. Aenean lacinia vel ante vulputate fringilla. Curabitur sed faucibus sapien. Duis at augue lectus. Vivamus aliquet, ipsum placerat volutpat bibendum, dui sapien convallis mi, convallis cursus tortor sapien sit amet eros. Quisque ultricies lectus nulla, in iaculis lacus tempus sit amet.
       """
     about:
       nav: "About"

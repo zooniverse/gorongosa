@@ -1,12 +1,9 @@
 <% translate = require 't7e' %>
 
 <ul>
-  <img id='hamburger-icon' src='./images/hamburger-icon.svg'>
-  <a href="#/home" id="site-title"><span>Snapshot</span> <span>Chicago</span></a>
+  <img id="hamburger-icon" src="./images/hamburger-icon.svg">
+  <a href="#/home" id="site-title"><span>Snapshot</span> <span>Wisconsin</span></a>
 
   <li><%- translate 'a', 'navigation.classify', href: '#/classify' %></li>
-  <li><%- translate 'a', 'navigation.profile', href: '#/profile' %></li>
   <li><%- translate 'a', 'navigation.about', href: '#/about' %></li>
-  <li><%- translate 'a', 'navigation.discuss', href: '#' %></li>
-  <li><%- translate 'a', 'navigation.blog', href: '#' %></li>
 </ul>

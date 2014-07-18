@@ -12,7 +12,7 @@
     <div class="content">
       <p>Welcome to</p>
       <h1>Snapshot</h1>
-      <h1>Chicago</h1>
+      <h1>Wisconsin</h1>
     </div>
   </div>
 </section>
@@ -20,8 +20,6 @@
 <section>
   <div class="home-section right">
     <div class="content">
-      <%- translate 'h2', 'home.rightBannerHeader' %>
-      <%- translate 'p', 'home.content' %>
       <p class="action">
         <%- translate 'a', 'home.action', href: '#/classify' %>
       </p>
@@ -34,7 +32,6 @@
     <div class="content">
       <%- translate 'h1', 'home.stats.header' %>
       <div class="quarter">
-        <!-- todo work out data bind on @stats -->
         <h2 id="user-count">0</h2>
         <%- translate 'p', 'home.stats.activeUsers' %>
       </div>
@@ -54,16 +51,5 @@
         <%- translate 'p', 'home.stats.complete' %>
       </div>
     </div>
-  </div>
-</section>
-
-<section>
-  <div class='home-pre-footer'>
-    <div class='content'>
-      <div class='third'><img src='http://placehold.it/250X100'></div>
-      <div class='third'><img src='http://placehold.it/250X150'></div>
-      <div class='third'><img src='http://placehold.it/250X100'></div>
-    </div>
-    <p>Snapshot Chicago is a collaboration between Lincoln Park Zoo, the Adler Planetarium, and the Zooniverse. Maybe another line about Chicago to pad this out.</p>
   </div>
 </section>

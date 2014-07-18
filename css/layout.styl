@@ -5,7 +5,7 @@ html
   overflow-y: scroll;
 
   body
-    background-color: $light-blue;
+    background-color: $green-light;
     margin: 0;
     height: 100%;
     padding: 0;
@@ -55,10 +55,10 @@ html
         margin: 0 25px 10px 0;
         span
           &:nth-child(1)
-            color: $dark-blue;
+            color: $medium-grey-font;
             font-weight: 400;
           &:nth-child(2)
-            color: $red;
+            color: $green;
             font-weight: 700;
         @media $desktop-or-smaller
           margin-right: 0;
@@ -84,7 +84,7 @@ html
           a
             border: 2px solid transparent;
             border-radius: 125px;
-            color: $medium-blue;
+            color: $medium-grey-font;
             display: block;
             opacity: 0.75;
             padding: 5px 0;
@@ -93,7 +93,7 @@ html
             width: 100%;
             &:hover,
             &.active
-              border-color: $light-blue
+              border-color: $green
           @media $phone-or-smaller
             display: none;
             width: 100%;
@@ -141,7 +141,7 @@ html
         display none
 
   .site-footer
-    background-color: darken($medium-blue, 10%);
+    background-color: darken($green, 10%);
 
     .zooniverse-footer
       color: white;
@@ -155,7 +155,7 @@ html
         .zooniverse-logo
           width: 90px;
           margin-bottom: 30px;
-          fill: $light-blue;
+          fill: $green-dark;
 
       .zooniverse-footer-content
         float: none;
