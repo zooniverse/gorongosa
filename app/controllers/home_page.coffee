@@ -4,7 +4,7 @@ Api = require 'zooniverse/lib/api'
 
 REFRESH_INTERVAL = 1000 * 60 * 5
 
-isDev = if !!location.host.indexOf 'demo' or +location.port > 1000 then true else false
+isDev = if ~!!location.host.indexOf 'demo' or +location.port > 1000 then true else false
 
 class HomePage extends Controller
   className: 'home-page'
@@ -29,8 +29,8 @@ class HomePage extends Controller
 
   fetchProject: =>
     Api.current.get '/projects/wisconsin', (project) =>
-      @userCount.html formatNumber project.user_count
-      @classificationCount.html formatNumber project.classification_count
+      @userCount.html formatNumber project.user_count || 0
+      @classificationCount.html formatNumber project.classification_count || 0
 
   fetchProjectStats: =>
     Api.current.get '/projects/wisconsin/status?status_type=subjects', (subjectStatus) =>
