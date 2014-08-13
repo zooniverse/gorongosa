@@ -28,26 +28,26 @@
 </section>
 
 <section>
-  <div class="snapshot-chicago-stats">
+  <div class="project-stats">
     <div class="content">
       <%- translate 'h1', 'home.stats.header' %>
       <div class="quarter">
-        <h2 id="user-count">0</h2>
+        <h2 id="user-count">-</h2>
         <%- translate 'p', 'home.stats.activeUsers' %>
       </div>
 
       <div class="quarter">
-        <h2 id="classification-count">0</h2>
+        <h2 id="classification-count">-</h2>
         <%- translate 'p', 'home.stats.crittersIdentified' %>
       </div>
 
       <div class="quarter">
-        <h2 id="total-images">0</h2>
+        <h2 id="total-images">-</h2>
         <%- translate 'p', 'home.stats.totalImages' %>
       </div>
 
       <div class="quarter">
-        <h2 id="percent-complete">0</h2>
+        <h2 id="percent-complete">-</h2>
         <%- translate 'p', 'home.stats.complete' %>
       </div>
     </div>

@@ -1,28 +1,45 @@
 {Controller} = require 'spine'
-template = require '../views/home_page'
-Project  = require 'zooniverse/models/project'
-ProjectStats = require '../models/project_stats'
-formatNumber =  require '../lib/format_number'
+formatNumber =  require '../lib/format-number'
+Api = require 'zooniverse/lib/api'
 
+REFRESH_INTERVAL = 1000 * 60 * 5
+
+isDev = if !!location.host.indexOf 'demo' or +location.port > 1000 then true else false
 
 class HomePage extends Controller
   className: 'home-page'
+  template: require '../views/home_page'
 
-  stats: null
+  elements:
+    '#user-count': 'userCount'
+    '#classification-count': 'classificationCount'
+    '#totalImages': 'totalImages'
+    '#percent-complete': 'percentComplete'
   
-  handleProjectFetch: ->
-    @stats = new ProjectStats(Project.current)
-    formatedPercentComplete = @stats.percentComplete().toString() + "%"
-    #re-rendering stats on the view
-    view_controls = $(".snapshot-chicago-stats")
-    view_controls.find("#user-count").text(formatNumber(@stats.userCount))
-    view_controls.find("#classification-count").text(formatNumber(@stats.classificationCount))
-    view_controls.find("#percent-complete").text(formatedPercentComplete)
-    view_controls.find("#total-images").text(formatNumber(@stats.totalSubjectCount))
-
   constructor: ->
     super
-    Project.on "fetch", @handleProjectFetch 
-    @html template
-   
+    @html @template @
+
+    @fetchProject()
+    setInterval @fetchProject, REFRESH_INTERVAL
+
+    unless isDev
+      @fetchProjectStats()
+      setInterval @fetchProjectStats, REFRESH_INTERVAL
+
+  fetchProject: =>
+    Api.current.get '/projects/wisconsin', (project) =>
+      @userCount.html formatNumber project.user_count
+      @classificationCount.html formatNumber project.classification_count
+
+  fetchProjectStats: =>
+    Api.current.get '/projects/wisconsin/status?status_type=subjects', (subjectStatus) =>
+      total = subjectStatus.reduce (pv, cv, i, arr) ->
+        pv + cv.count
+      , 0
+      complete = subjectStatus[1].count # eh
+
+      @totalImages.html formatNumber total
+      @percentComplete.html "#{ (complete / total) * 100 }%"
+
 module.exports = HomePage
