@@ -24,10 +24,7 @@ ContentPage = require './controllers/content_page'
 feedbackContent = require './views/feedback_page'
 
 app = {}
-api = new Api project: 'serengeti'
-
-#TODO do we need this
-$('.before-load').remove()
+api = new Api project: 'wisconsin'
 
 app.stack = new Stack
   className: "main #{Stack::className}"
@@ -53,7 +50,6 @@ User.fetch()
 app.topBar = new TopBar
 app.footer = new Footer
 
-#TODO note Navigation does not extend from Controller c.f. Condors:app/controllers/SiteNavigation
 navigation = new Navigation
 app.navigation = navigation
 
