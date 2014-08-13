@@ -3,37 +3,32 @@ enUs = require './lib/en-us'
 translate.load enUs
 
 $ = window.jQuery
+
 require 'spine'
-
-Navigation = require './controllers/navigation'
-
 Route = require 'spine/lib/route'
-AboutPage = require './controllers/about_page'
-HomePage = require './controllers/home_page'
-Classifier = require './controllers/classifier'
-Profile = require './controllers/profile'
-Api = require 'zooniverse/lib/api'
-Project  = require 'zooniverse/models/project'
+{ Stack } = require 'spine/lib/manager'
 
-TopBar = require 'zooniverse/controllers/top-bar'
-Footer = require 'zooniverse/controllers/footer'
+Api = require 'zooniverse/lib/api'
 User = require 'zooniverse/models/user'
 
-{ Stack } = require 'spine/lib/manager'
-ContentPage = require './controllers/content_page'
-feedbackContent = require './views/feedback_page'
-
-app = {}
 api = new Api project: 'wisconsin'
 
-app.stack = new Stack
+TopBar = require 'zooniverse/controllers/top-bar'
+topBar = new TopBar
+topBar.el.appendTo 'body'
+
+Navigation = require './controllers/navigation'
+navigation = new Navigation
+navigation.el.appendTo  'body'
+
+stack = new Stack
   className: "main #{Stack::className}"
 
   controllers:
-    home: HomePage
-    about: AboutPage
-    classify: Classifier
-    profile: Profile
+    home: require './controllers/home_page'
+    about: require './controllers/about_page'
+    classify: require './controllers/classifier'
+    profile: require './controllers/profile'
 
   routes:
     '/home': 'home'
@@ -43,22 +38,15 @@ app.stack = new Stack
 
   default: 'home'
 
-Route.setup()
+stack.el.appendTo  'body'
 
-User.fetch()
-
-app.topBar = new TopBar
-app.footer = new Footer
-
-navigation = new Navigation
-app.navigation = navigation
-
-app.navigation.el.appendTo  'body'
-app.stack.el.appendTo  'body'
-app.topBar.el.appendTo 'body'
-
-siteFooter = $('<div class="site-footer"></div>').append app.footer.el
+Footer = require 'zooniverse/controllers/footer'
+footer = new Footer
+siteFooter = $('<div class="site-footer"></div>').append footer.el
 siteFooter.appendTo 'body'
 
-window.app = app
+Route.setup()
+User.fetch()
+
+window.app = { stack, api }
 module.exports = window.app
