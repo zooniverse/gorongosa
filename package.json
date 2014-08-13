@@ -11,7 +11,7 @@
   }, 
   "scripts": {
     "start": "haw serve --port 6001",
-    "deploy-to-staging": "haw build && publisssh ./public demo.zooniverse.org/wisconsin-zoo && rm -rf ./build",
-    "deploy": "haw build && publisssh ./public zooniverse-static/www.snapshotwisconsin.org && rm -rf ./build"
+    "deploy-to-staging": "haw build && publisssh ./build demo.zooniverse.org/wisconsin-zoo && rm -rf ./build",
+    "deploy": "haw build && publisssh ./build zooniverse-static/www.snapshotwisconsin.org && rm -rf ./build"
   }
 }
