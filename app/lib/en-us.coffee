@@ -2,6 +2,8 @@ module.exports =
   navigation:
     home: 'Home'
     about: 'About'
+    science: 'Science'
+    team: 'Team'
     classify: 'Classify'
     profile: 'Profile'
     discuss: 'Discuss'

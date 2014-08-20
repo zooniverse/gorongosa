@@ -1,46 +1,37 @@
 {Controller} = require 'spine'
+
+Subject = require 'zooniverse/models/subject'
+User = require 'zooniverse/models/user'
+Classification = require '../models/classification'
+
 SubjectViewer = require './subject_viewer'
 AnimalSelector = require './animal_selector'
 animals = require '../lib/animals'
 characteristics = require '../lib/characteristics'
 AnimalMenuItem = require './animal_menu_item'
-Subject = require 'zooniverse/models/subject'
-User = require 'zooniverse/models/user'
 {Tutorial} = require 'zootorial'
 tutorialSteps = require '../lib/tutorial_steps'
 getTutorialSubject = require '../lib/get_tutorial_subject'
 getEmptySubject = require '../lib/get_empty_subject'
 Notifier = require "../lib/notifier"
-# TODO review
-# Classification is subclassed from 'zooniverse/models/classification' to keep the event logic around
-# add species. This might not be the best solution
-Classification = require '../models/classification'
 
 class Classifier extends Controller
   className: 'classifier'
 
   tutorial: null
-
-  subject: null
   classification: null
 
   constructor: ->
     super
 
     @subjectViewer = new SubjectViewer
-
     @el.append @subjectViewer.el
 
     @animalSelector = new AnimalSelector
       set: animals
       characteristics: characteristics
       itemController: AnimalMenuItem
-
     @el.append @animalSelector.el
-
-    @tutorial = new Tutorial
-      steps: tutorialSteps
-      parent: @el
 
     User.on 'change', @onUserChange
     Subject.on 'select', @onSubjectSelect
@@ -86,7 +77,6 @@ class Classifier extends Controller
       element.click()
 
   onSubjectSelect: (event, subject) =>
-    #TODO console.log "********* remote subjects retrieved"
     for property in ['tutorial', 'empty']
       @el.toggleClass property, !!subject.metadata[property]
 
@@ -94,25 +84,12 @@ class Classifier extends Controller
     @subjectViewer.setClassification @classification
     @animalSelector.setClassification @classification
 
-    if !!subject.metadata.tutorial
-      @tutorial.start()
-    else
-      @tutorial.end()
-
   onNoLocalSubjects: =>
-    #TODO console?.log "********* No remote subjects retrieved"
     subject = getEmptySubject()
     subject.select()
 
   onUserChange: =>
-    tutorialDone = true
-    doingTutorial = Subject.current?.metadata.tutorial
-
-    if tutorialDone
-      @tutorial.end()
-      Subject.next() # if doingTutorial or not Subject.current
-    else
-      getTutorialSubject().select()
+    Subject.next()
 
   activate: ->
     super

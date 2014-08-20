@@ -21,18 +21,21 @@ Navigation = require './controllers/navigation'
 navigation = new Navigation
 navigation.el.appendTo  'body'
 
+ContentPage = require './controllers/content-page'
 stack = new Stack
   className: "main #{Stack::className}"
 
   controllers:
-    home: require './controllers/home_page'
-    about: require './controllers/about_page'
+    home: require './controllers/home'
     classify: require './controllers/classifier'
     profile: require './controllers/profile'
+    about: (class extends ContentPage then template: require './views/about')
+    science: (class extends ContentPage then template: require './views/science')
 
   routes:
     '/home': 'home'
     '/about': 'about'
+    '/science': 'science'
     '/classify': 'classify'
     '/profile': 'profile'
 

@@ -1,0 +1,23 @@
+<% t = require 't7e' %>
+
+<div class="secondary-header">
+  <h1>About</h1>
+</div>
+
+<div class="secondary-bg">
+  <div class="secondary-content">
+    <div class="left-column">
+      <div class="content sub-nav-about-info">
+        <%- t 'h1', 'about.info.header' %>
+        <%- t 'p', 'about.info.p' %>
+      </div>
+    </div>
+
+    <div class="right-column">
+      <div class="content">
+        <%- t 'h1', 'about.connect.header' %>
+        <a href="#/classify"><%- t 'button', 'about.connect.action' %></a>
+      </div>
+    </div>
+  </div>
+</div>
