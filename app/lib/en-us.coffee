@@ -1,10 +1,10 @@
 module.exports =
   navigation:
     home: 'Home'
-    about: 'About'
+    classify: 'Classify'
     science: 'Science'
     team: 'Team'
-    classify: 'Classify'
+    education: 'Education'
     profile: 'Profile'
     discuss: 'Discuss'
     blog: 'Blog'
@@ -393,73 +393,31 @@ module.exports =
           The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math. 
           Throughout 80 years, the Adler has inspired the next generation of explorers by sharing the personal stories of space exploration and America’s space heroes.
         """
-      lincolnParkZoo:
-        header: "Lincoln Park Zoo"
-        p: """
-          Lincoln Park Zoo is dedicated to connecting people with nature by providing a free, family-oriented wildlife experience in the heart of Chicago and by advancing 
-          the highest quality of animal care, education, science and conservation.
-        """
 
-    team:
-      nav: "Team"
-      header: "Team"
-      science:
-        magle:
-          name: 'Seth Magle'
-          image: 'http://placehold.it/100'
-          description: '''
-            Short bio
-          '''
+  team:
+    navigation:
+      people: 'People'
+      organizations: 'Organizations'
 
-      development:
-        borden:
-          name: 'Kelly Borden'
-          image: 'images/about/team/kelly.jpg'
-          description: '''
-            Kelly is an archaeologist by training but an educator by passion.
-            While working at the Museum of Science and Industry and the Adler Planetarium she became an enthusiastic science educator eager to bring science to the masses.
-            When not pondering the wonders of science, Kelly can often be found baking or spending time with her herd of cats – Murray, Ada, & Kepler.
-          '''
+    bios:
+      townsend: ''
+      zuckerberg: 'Dr. Benjamin Zuckerberg is an assistant professor in the Department of Forest and Wildlife Ecology at the University of Wisconsin-Madison. His research focuses on how climate change and habitat loss impacts wildlife populations. He is a strong advocate for the role of the public in collecting biological data. Using the data from these “citizen science” programs, Ben has studied shifts in bird ranges and migration in response to a changing climate.'
+      deelen: ''
+      singh: ''
+      stenglein: 'Dr. Jennifer Stenglein is a quantitative wildlife research scientist with the Wisconsin Department of Natural Resources where she works on trail camera monitoring of Wisconsin’s wildlife. She is interested in getting students and the public involved in wildlife monitoring and using those data to understand spatial patterns and temporal trends in wildlife populations.'
+      martin: 'Karl Martin is the State Director for the Community, Natural Resource and Economic Development Program and an Assistant Dean with the University of Wisconsin Cooperative Extension. He is an adjunct Associate Professor at the University of Wisconsin-Madison’s Forest and Wildlife Ecology Department and recently served as the Wildlife and Forestry Research Section Chief at the Wisconsin Department of Natural Resources. Karl received his Bachelors degree in Wildlife Ecology at UW-Madison and his Masters and Doctorate degrees at Oregon State University. Karl’s research has focused on interaction of forest management and multi-scale wildlife habitat relationships. His current position focuses on the ‘Wisconsin Idea’ of taking the information and resources of the University to communities and citizens of the state.'
+      anhalt: 'Christine Anhalt is a research scientist with the Wisconsin Department of Natural Resources where she assists with coordinating the Snapshot Wisconsin project. She completed a Master’s degree in conservation biology at University of Wisconsin-Madison. Christine’s research has focused on human-wildlife interactions.'
 
-        raden:
-          name: 'Steve Raden'
-          image: 'http://placehold.it/100'
-          description: '''
-            Steve bio
-          '''
+    organizations:
+      wdnr: 'Members of the Snapshot Wisconsin team are scientists at the Wisconsin Department of Natural Resources (WDNR). The WDNR provided funding for the purchase of trail cameras and provides ongoing support for the project. The WDNR, in partnership with individuals and organizations, manages “fish, wildlife, forests, parks, air and water resources while promoting a healthy, sustainable environment and a full range of outdoor opportunities.”'
+      uwm: 'Members of the Snapshot Wisconsin team are ecologists at the University of Wisconsin Madison in the Department of Forest and Wildlife Ecology. UW-Madison is a public, land-grant institution founded in 1848 whose mission is to provide “a learning environment in which faculty, staff and students can discover, examine critically, preserve and transmit the knowledge, wisdom and values that will help insure the survival of this and future generations and improve the quality of life for all.”'
+      nasa: 'NASA provided partial funding for the first year of the project thought the Ecological Forecasting for Conservation and Natural Resource Management Program. The NASA Applied Sciences Program supports projects that enable uses of Earth observations in organizations’ policy, business, and management decisions.'
+      wcbmn: 'The Wisconsin Citizen-based Monitoring (WCBM) Network provided funding for materials used in training citizen volunteers during the first year of the project. The WCBM Network is a stakeholder collaboration “to improve the efficiency and effectiveness of monitoring efforts by providing coordination, communications, technical, and financial resources and recognition to members of the Wisconsin citizen-based monitoring community.”'
+      adler: 'The Adler Planetarium was founded in 1930 by Chicago business leader Max Adler. A recognized leader in public learning, the Adler inspires young people -particularly women and minorities - to pursue careers in science, technology, engineering, and math. Scientists, historians and educators at the museum inspire the next generation of explorers.'
 
-        lintott:
-          name: 'Chris Lintott'
-          image: 'images/about/team/chris.jpg'
-          description: '''
-            Chris Lintott leads the Zooniverse team, and is his copious spare time is a researcher at the University of Oxford specialising in galaxy formation and evolution.
-            A keen popularizer of science, he is best known as co-presenter of the BBC's long running Sky at Night program. He's currently drinking a lot of sherry.
-          '''
-
-        vansingel:
-          name: 'Heath Van Singel'
-          image: 'http://placehold.it/100'
-          description: '''
-            Heath bio
-          '''
-
-        parrish:
-          name: 'Michael Parrish'
-          image: 'images/about/team/michael.jpg'
-          description: '''
-            Michael has a degree in Computer Science and has been working with The Zooniverse for the past three years as a Software Developer.
-            Aside from web development; new technologies, science, AI, reptiles, and coffee tend to occupy his attention.
-          '''
-
-        whyte:
-          name: 'Laura Whyte'
-          image: 'http://placehold.it/100'
-          description: '''
-            Whyte bio
-          '''
-    connect:
-      header: "Connect"
-      action: "Get Started"
-      social: """
-        Follow the <a href= '#/'>Snapshot Chicago Blog</a> and <a href='#/'>@Snapshot_Chicago</a> to keep current with the latest findings
-      """
+  connect:
+    header: "Connect"
+    action: "Get Started"
+    social: """
+      Follow the <a href= '#/'>Snapshot Chicago Blog</a> and <a href='#/'>@Snapshot_Chicago</a> to keep current with the latest findings
+    """

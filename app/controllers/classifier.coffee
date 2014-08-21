@@ -13,7 +13,7 @@ AnimalMenuItem = require './animal_menu_item'
 tutorialSteps = require '../lib/tutorial_steps'
 getTutorialSubject = require '../lib/get_tutorial_subject'
 getEmptySubject = require '../lib/get_empty_subject'
-Notifier = require "../lib/notifier"
+Notifier = require '../lib/notifier'
 
 class Classifier extends Controller
   className: 'classifier'
@@ -90,9 +90,5 @@ class Classifier extends Controller
 
   onUserChange: =>
     Subject.next()
-
-  activate: ->
-    super
-    setTimeout => @tutorial.dialog.attach()
 
 module.exports = Classifier

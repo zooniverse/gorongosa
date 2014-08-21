@@ -1,0 +1,69 @@
+<% t = require 't7e' %>
+
+<div class="secondary-header">
+  <h1>Team</h1>
+</div>
+
+<div class="secondary-bg">
+  <div class="secondary-content">
+    <div class="sub-nav">
+      <button name="people"><%- t 'span', 'team.navigation.people' %></button>
+      <button name="organizations"><%- t 'span', 'team.navigation.organizations' %></button>
+    </div>
+  </div>
+
+  <div class="secondary-content">
+    <div class="left-column">
+      <div class="content" data-nav="people">
+        <h2>The Snapshot Wisconsin Team</h2>
+        <% teamMembers = ['Phil Townsend', 'Ben Zuckerberg', 'Tim Van Deelen', 'Aditya Singh', 'Jennifer Stenglein', 'Karl Martin', 'Chrstine Anhalt'] %>
+        <% for teamMember in teamMembers: %>
+          <div class="team-member">
+            <h3><%- teamMember %></h3>
+            <img src="./images/team/<%- @snakerize teamMember %>.jpg" />
+            <%- t 'p', "team.bios.#{ @keyerize teamMember }" %>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="content" data-nav="organizations">
+        <h2>Participating Organizations</h2>
+        <div class="team-member">
+          <h3>Wisconsin Department of Natural Resources</h3>
+          <img src="./images/logos/wdnr.png">
+          <p>Members of the Snapshot Wisconsin team are scientists at the Wisconsin Department of Natural Resources (WDNR). The WDNR provided funding for the purchase of trail cameras and provides ongoing support for the project. The WDNR, in partnership with individuals and organizations, manages "fish, wildlife, forests, parks, air and water resources while promoting a healthy, sustainable environment and a full range of outdoor opportunities."</p>
+        </div>
+
+        <div class="team-member">
+          <h3>University of Wisconsin-Madison</h3>
+          <img src="./images/logos/uwmn.png">
+          <p>Members of the Snapshot Wisconsin team are ecologists at the University of Wisconsin Madison in the Department of Forest and Wildlife Ecology. UW-Madison is a public, land-grant institution founded in 1848 whose mission is to provide "a learning environment in which faculty, staff and students can discover, examine critically, preserve and transmit the knowledge, wisdom and values that will help insure the survival of this and future generations and improve the quality of life for all."</p>
+        </div>
+
+        <div class="team-member">
+          <h3>NASA</h3>
+          <img src="./images/logos/nasa.gif">
+          <p>NASA provided partial funding for the first year of the project thought the Ecological Forecasting for Conservation and Natural Resource Management Program. The NASA Applied Sciences Program supports projects that enable uses of Earth observations in organizations' policy, business, and management decisions.</p>
+        </div>
+
+        <div class="team-member">
+          <h3>Wisconsin Citizen-based Monitoring Network</h3>
+          <img src="./images/logos/wcbm.gif">
+          <p>The Wisconsin Citizen-based Monitoring (WCBM) Network provided funding for materials used in training citizen volunteers during the first year of the project. The WCBM Network is a stakeholder collaboration "to improve the efficiency and effectiveness of monitoring efforts by providing coordination, communications, technical, and financial resources and recognition to members of the Wisconsin citizen-based monitoring community."</p>
+        </div>
+
+        <div class="team-member">
+          <h3>Adler Planetarium</h3>
+          <img src="./images/logos/adler.jpg">
+          <p>The Adler Planetarium was founded in 1930 by Chicago business leader Max Adler. A recognized leader in public learning, the Adler inspires young people -particularly women and minorities - to pursue careers in science, technology, engineering, and math. Scientists, historians and educators at the museum inspire the next generation of explorers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-column">
+      <div class="content">
+        <%- require('./sidebar')(@) %>
+      </div>
+    </div>
+  </div>
+</div>

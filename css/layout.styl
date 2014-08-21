@@ -5,7 +5,7 @@ html
   overflow-y: scroll;
 
   body
-    background-color: $green-light;
+    background-color: #0077c8;
     margin: 0;
     height: 100%;
     padding: 0;
@@ -46,7 +46,6 @@ html
       @media $phone-or-smaller
         padding-top: 50px;
 
-
       #site-title
         text-decoration: none;
         text-transform: uppercase;
@@ -65,18 +64,8 @@ html
           display: block;
 
       ul
-        margin: 0;
-        padding: 0;
-        img
-          width: 22px;
-          position: absolute;
-          left: 10px;
-          display: inline-block;
-          margin: -20px; // increase hamburger icon
-          padding: 20px; // target size for touch screens
-          cursor: pointer;
-          @media $phone-or-larger
-            display: none;
+        margin: 0
+        padding: 0
 
         li
           width: 90px;
@@ -141,7 +130,7 @@ html
         display none
 
   .site-footer
-    background-color: darken($green, 10%);
+    background: $green-dark
 
     .zooniverse-footer
       color: white;
@@ -155,7 +144,7 @@ html
         .zooniverse-logo
           width: 90px;
           margin-bottom: 30px;
-          fill: $green-dark;
+          fill: white;
 
       .zooniverse-footer-content
         float: none;

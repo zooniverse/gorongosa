@@ -28,15 +28,17 @@ stack = new Stack
   controllers:
     home: require './controllers/home'
     classify: require './controllers/classifier'
-    profile: require './controllers/profile'
-    about: (class extends ContentPage then template: require './views/about')
     science: (class extends ContentPage then template: require './views/science')
+    education: (class extends ContentPage then template: require './views/education')
+    team: (class extends ContentPage then template: require './views/team')
+    profile: require './controllers/profile'
 
   routes:
     '/home': 'home'
-    '/about': 'about'
-    '/science': 'science'
     '/classify': 'classify'
+    '/science': 'science'
+    '/education': 'education'
+    '/team': 'team'
     '/profile': 'profile'
 
   default: 'home'

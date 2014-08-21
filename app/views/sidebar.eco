@@ -1,0 +1,4 @@
+<% t = require 't7e' %>
+
+<%- t 'h1', 'connect.header' %>
+<a href="#/classify"><%- t 'button', 'connect.action' %></a>
