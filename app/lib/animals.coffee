@@ -2,7 +2,6 @@ FilteringSet = require '../models/filtering_set'
 Animal = require '../models/animal'
 translate = require 't7e'
 
-
 #Chicago values
 values = [
   'likeCatDog','likeRodent','likeManMade','likeOther',
@@ -59,19 +58,11 @@ animalCharacteristics = [
   {wolfGray:                [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
   {wolverine:               [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
   {woodchuck:               [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
-
-
 ]
 
 
 dashedFromId = (id) ->
   id.replace /[A-Z]/g, (cap) -> "-#{cap.toLowerCase()}"
-
-# imagesFromId = (id) -> [
-#     "images/animals/#{dashedFromId id}-1.jpg"
-#     "images/animals/#{dashedFromId id}-2.jpg"
-#     "images/animals/#{dashedFromId id}-3.jpg"
-#   ]
 
 imagesFromId = (id) -> [
     "http://placehold.it/350x150&text=#{dashedFromId id}"

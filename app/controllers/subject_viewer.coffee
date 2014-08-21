@@ -2,7 +2,6 @@
 template = require '../views/subject_viewer'
 AnnotationItem = require './annotation_item'
 Subject = require 'zooniverse/models/subject'
-modulus = require '../lib/modulus'
 splits = require '../lib/splits'
 
 class SubjectViewer extends Controller

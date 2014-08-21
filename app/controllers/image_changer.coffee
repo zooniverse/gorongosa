@@ -1,6 +1,5 @@
 {Controller} = require 'spine'
 template = require '../views/image_changer'
-modulus = require '../lib/modulus'
 
 class ImageChanger extends Controller
   sources: null
@@ -31,7 +30,7 @@ class ImageChanger extends Controller
     @activate selectedIndex
 
   activate: (@active) ->
-    @active = modulus +@active, @sources.length
+    @active = +@active %% @sources.length
 
     @setActiveClasses image,  i, @active for image,  i in @images
     @setActiveClasses button, i, @active for button, i in @toggles

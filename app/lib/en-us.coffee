@@ -18,20 +18,6 @@ module.exports =
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     '''
-    allSeasonsComplete: '''
-      <p>With your help, we've classified all the data we have so far. Great work!</p>
-      <p>
-        We're leaving some images up for further classification, but we have more projects
-        (like <a href="https://www.zooniverse.org/project/cyclonecenter">Cyclone Center</a>
-        and <a href="https://www.zooniverse.org/project/batdetective">Bat Detective</a>) that need your help.
-        Visit <a href="https://www.zooniverse.org/">zooniverse.org</a> to see them all.
-      </p>
-      <p>
-        Keep an eye on <a href="http://blog.snapshotserengeti.org/">the blog</a>
-        to learn what happens with the data the project has generated
-        and to find out when more images from the Serengeti are available.
-      </p>
-    '''
     action: 'Get Started'
     currentStatus: '<span class="classification-count">0</span> classifications by <span class="user-count">0</span> volunteers'
 
@@ -200,6 +186,10 @@ module.exports =
       task: 'Good job! The image you successfully classified was taken by one of over 200 motion triggered cameras set-up around Serengeti National Park.'
       science: 'Good job! Our science team needs your classifications to understand how different animals coexist in the Serengeti.'
 
+  differences:
+    bearBlack:
+      amphibiansAndReptiles: 'Really hard to confuse these two, but somehow people manage it.'
+
   animals:
     amphibiansAndReptiles:
       label: 'Amphibians and Reptiles'
@@ -209,7 +199,7 @@ module.exports =
       description: 'description'
     bearBlack:
       label: 'Bear, Black'
-      description: 'description'
+      description: 'Black bears are large and heavily built.  They are usually black in color with a brown muzzle. Other uncommon color variations include brown or cinnamon. They have a short tail and prominent, round ears.'
     beaverAmerican:
       label: 'Beaver, American'
       description: 'description'
