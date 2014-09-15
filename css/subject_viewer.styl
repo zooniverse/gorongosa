@@ -39,7 +39,6 @@
         border: 2px solid #ddd;
         border-radius: 5px;
         font-size: 12px;
-        height: 50px
         right: 0;
         text-align: center;
         top: 100%;
@@ -50,13 +49,9 @@
           padding: 0 10px;
           background: $white;
 
-          &:not(:first-child)
-            border-top: 1px solid $gray;
-
           &:hover,
           &.selected
-            background: #0077c8;
-            color: $white;
+            background: #ddd;
 
           img
             display: none;
@@ -67,7 +62,7 @@
       &.open
         button[name="characteristic"]
           background: $white;
-          color: $medium-blue;
+          color: $green;
           text-shadow: none;
 
   .images
@@ -92,8 +87,8 @@
       font-size: 12px;
       font-weight: 300;
       position: absolute;
-      width: unit($subject-width, 'px')
-      left: 10px;
+      left: 5px;
+      top: 5px;
       z-index: 1;
       height: 42px;
       overflow: scroll;
@@ -267,12 +262,12 @@
 
       button[name="next"]
         color: $white;
-        background: $medium-blue
+        background: $green-really;
         padding: 3px 10px 3px 32px;
         text-transform: uppercase;
         letter-spacing: 1px;
         &:active
-          background: lighten($medium-blue, 5%);
+          background: lighten($green, 5%);
 
   &.zoomed .images figure
     cursor: -moz-grab;
@@ -342,6 +337,7 @@
       bottom: 100%;
       box-sizing: border-box;
       font-size: 12px;
+      height: 50px;
       left: 0;
       opacity: 1;
       position: absolute;
@@ -443,10 +439,11 @@
         margin: 9px 10px 10px 10px;
         border-radius: 4px;
         text-align: center;
+        &:hover
+          background-color: $red;
 
     &.open button[name="characteristic"]
       color: $white;
-      background-color: $medium-blue;
 
     &.in-use button[name="characteristic"]
       font-weight: bold;

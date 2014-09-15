@@ -322,6 +322,7 @@ module.exports =
     likeCatDog: 'Cat Dog'
     likeRodent: 'Rodent'
     likeOther: 'Other'
+    likeManMade: 'Man Made'
     coatTanYellow: 'Tan Yellow'
     coatRedBrown: 'Red Brown'
     coatBrownBlack: 'Brown Black'
