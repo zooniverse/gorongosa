@@ -112,15 +112,15 @@
             padding: 2px 5px;
 
           > input:checked + .label
-            background: $medium-blue;
+            background: $green-really;
             color: $white;
 
   .action
-    bottom: 0;
+    bottom: 5px;
     font-weight: bold;
     padding: 2px;
     position: absolute;
-    right: 0;
+    right: 5px;
 
     button
       @extend .classifier-action-button;
@@ -134,7 +134,7 @@
 
       &[name="identify"]
         color: $white;
-        background: $medium-blue;
+        background: $green-really;
 
 .confusion-popup
   clearfix();
@@ -170,89 +170,90 @@
     float: left;
     width: 68px;
 
-  &.beaver .image
-    @extend #thumb-for.beaver;
-
-  &.bike .image
-    @extend #thumb-for.bike;
-
-  &.car .image
-    @extend #thumb-for.car;
-
-  &.domCat .image
-    @extend #thumb-for.domCat;
-
-  &.chipmunk .image
-    @extend #thumb-for.chipmunk;
-
+  &.amphibiansAndReptiles .image
+    @extend #thumb-for.amphibiansAndReptiles
+  &.badgerAmerican .image
+    @extend #thumb-for.badgerAmerican
+  &.bearBlack .image
+    @extend #thumb-for.bearBlack
+  &.beaverAmerican .image
+    @extend #thumb-for.beaverAmerican
+  &.birds .image
+    @extend #thumb-for.birds
+  &.bobcat .image
+    @extend #thumb-for.bobcat
+  &.catDomestic .image
+    @extend #thumb-for.catDomestic
+  &.chipmunksAndSquirrels .image
+    @extend #thumb-for.chipmunksAndSquirrels
+  &.cottontailEastern .image
+    @extend #thumb-for.cottontailEastern
+  &.cougar .image
+    @extend #thumb-for.cougar
   &.coyote .image
-    @extend #thumb-for.coyote;
-
-  &.deer .image
-    @extend #thumb-for.deer;
-
-  &.domDog .image
-    @extend #thumb-for.domDog;
-
-  &.grayFox .image
-    @extend #thumb-for.grayFox;
-
-  &.redFox .image
-    @extend #thumb-for.redFox;
-
-  &.horse .image
-    @extend #thumb-for.horse;
-
-  &.human .image 
-    @extend #thumb-for.human;
-        
-  &.livestock .image
-    @extend #thumb-for.livestock;
-
-  &.mink .image
-    @extend #thumb-for.mink;
-
-  &.mouse .image
-    @extend #thumb-for.mouse;
-
-  &.mower .image
-    @extend #thumb-for.mower;
-
+    @extend #thumb-for.coyote
+  &.craneSandhill .image
+    @extend #thumb-for.craneSandhill
+  &.craneWhooping .image
+    @extend #thumb-for.craneWhooping
+  &.deerWhiteTailed .image
+    @extend #thumb-for.deerWhiteTailed
+  &.dogDomestic .image
+    @extend #thumb-for.dogDomestic
+  &.elk .image
+    @extend #thumb-for.elk
+  &.fisher .image
+    @extend #thumb-for.fisher
+  &.foxGray .image
+    @extend #thumb-for.foxGray
+  &.foxRed .image
+    @extend #thumb-for.foxRed
+  &.grouse .image
+    @extend #thumb-for.grouse
+  &.hareSnowshoe .image
+    @extend #thumb-for.hareSnowshoe
+  &.human .image
+    @extend #thumb-for.human
+  &.jackrabbitWhiteTailed .image
+    @extend #thumb-for.jackrabbitWhiteTailed
+  &.lynxCanada .image
+    @extend #thumb-for.lynxCanada
+  &.martenAmerican .image
+    @extend #thumb-for.martenAmerican
+  &.minkAmerican .image
+    @extend #thumb-for.minkAmerican
+  &.moose .image
+    @extend #thumb-for.moose
   &.muskrat .image
-    @extend #thumb-for.muskrat;
-
-  &.opossum .image
-    @extend #thumb-for.opossum;
-
-  &.otherVehicle .image
-    @extend #thumb-for.otherVehicle;
-
-  &.rabbit .image
-    @extend #thumb-for.rabbit;
-
-  &.raccoon .image
-    @extend #thumb-for.raccoon;
-
-  &.rat .image
-    @extend #thumb-for.rat;
-
-  &.skunk .image
-    @extend #thumb-for.skunk;
-
-  &.flyingSquirrel .image
-    @extend #thumb-for.flyingSquirrel;
-
-  &.foxSquirrel .image
-    @extend #thumb-for.foxSquirrel;
-
-  &.graySquirrel .image
-    @extend #thumb-for.graySquirrel;
-
-  &.melanisticGraySquirrel .image
-    @extend #thumb-for.melanisticGraySquirrel;
-
-  &.woodChuck .image
-    @extend #thumb-for.woodChuck;
+    @extend #thumb-for.muskrat
+  &.opossumVirginia .image
+    @extend #thumb-for.opossumVirginia
+  &.otherDomestic .image
+    @extend #thumb-for.otherDomestic
+  &.otter .image
+    @extend #thumb-for.otter
+  &.pheasentRingNecked .image
+    @extend #thumb-for.pheasentRingNecked
+  &.pigFeral .image
+    @extend #thumb-for.pigFeral
+  &.porcupineNorthAmerican .image
+    @extend #thumb-for.porcupineNorthAmerican
+  &.raccoonNorthern .image
+    @extend #thumb-for.raccoonNorthern
+  &.skunkStriped .image
+    @extend #thumb-for.skunkStriped
+  &.spottedSkunkEastern .image
+    @extend #thumb-for.spottedSkunkEastern
+  &.turkeyWild .image
+    @extend #thumb-for.turkeyWild
+  &.weasel .image
+    @extend #thumb-for.weasel
+  &.wolfGray .image
+    @extend #thumb-for.wolfGray
+  &.wolverine .image
+    @extend #thumb-for.wolverine
+  &.woodchuck .image
+    @extend #thumb-for.woodchuck
 
   .description
     float: left;
