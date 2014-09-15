@@ -2,7 +2,6 @@
 template = require '../views/navigation'
 
 class Navigation extends Controller
-  tag: "nav"
   className: 'site-navigation'
 
   elements:

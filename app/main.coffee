@@ -34,7 +34,7 @@ stack = new Stack
     profile: require './controllers/profile'
 
   routes:
-    '/home': 'home'
+    '/': 'home'
     '/classify': 'classify'
     '/science': 'science'
     '/education': 'education'
@@ -54,4 +54,3 @@ Route.setup()
 User.fetch()
 
 window.app = { stack, api }
-module.exports = window.app

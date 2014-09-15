@@ -12,17 +12,11 @@ module.exports =
   home:
     heading: 'Welcome to Snapshot Wisconsin'
     rightBannerHeader: "What is Snapshot Wisconsin?"
-    content: '''
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    '''
     action: 'Get Started'
     currentStatus: '<span class="classification-count">0</span> classifications by <span class="user-count">0</span> volunteers'
 
     stats:
-      header: "SNAPSHOT WISCONSIN Classification Statistics"
+      header: "SNAPSHOT WISCONSIN Statistics"
       activeUsers: "Active Users"
       crittersIdentified: "Critters Identified"
       totalImages: "Images Total"

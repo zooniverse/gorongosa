@@ -2,7 +2,6 @@
 template = require '../views/filter_menu'
 translate = require 't7e'
 
-
 class FilterMenu extends Controller
   set: null
   characteristic: null

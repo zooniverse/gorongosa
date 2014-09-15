@@ -1,18 +1,10 @@
 <% translate = require 't7e' %>
 
 <div class="general-filters">
-  <div class="like filter-menu"></div>
-
   <span class="search" title="[S]">
     <i rel="search">Search</i>
     <input name="search" data-shortcut="S" placeholder="<%= translate 'classify.search' %>"/>
   </span>
-</div>
-
-<div class="characteristic-filters">
-  <div class="coat filter-menu"></div>
-  <div class="tail filter-menu"></div>
-  <div class="build filter-menu"></div>
 </div>
 
 <div class="selection-area">

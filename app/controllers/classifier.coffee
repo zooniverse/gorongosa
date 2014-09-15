@@ -84,6 +84,8 @@ class Classifier extends Controller
     @subjectViewer.setClassification @classification
     @animalSelector.setClassification @classification
 
+    @animalSelector.createFilterMenus()
+
   onNoLocalSubjects: =>
     subject = getEmptySubject()
     subject.select()

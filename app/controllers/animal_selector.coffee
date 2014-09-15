@@ -34,7 +34,6 @@ class AnimalSelector extends Controller
     @set.bind 'search', @onSetSearch
 
     @html template @
-    @createFilterMenus()
 
     @onSetFilter @set.items
     @onSetSearch @set.items
@@ -42,7 +41,7 @@ class AnimalSelector extends Controller
   createFilterMenus: ->
     for characteristic in @characteristics
       new FilterMenu
-        el: @el.find ".#{characteristic.id}.filter-menu"
+        el: $(".#{characteristic.id}.filter-menu")
         set: @set
         characteristic: characteristic
 

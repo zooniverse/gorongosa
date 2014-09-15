@@ -1,4 +1,2 @@
-Snapshot Chicago
+Snapshot Wisconsin
 ==================
-
-This is the repository for the Lincoln Park Zoo project.
