@@ -52,7 +52,7 @@ module.exports =
       headDown: 'Head Down'
       neither: 'Neither'
       notVisible: 'Not Visble'
-     
+
 
     babies: 'Young present'
     rain: 'Raining'
@@ -187,137 +187,137 @@ module.exports =
   animals:
     amphibiansAndReptiles:
       label: 'Amphibians and Reptiles'
-      description: 'description'
+      description: 'Because these animals are so small, they will be captured infrequently by the camera. Amphibians and reptiles include many species of frogs, snakes, lizards, turtles, and salamanders. If you spot any of these, mark them here.'
     badgerAmerican:
       label: 'Badger, American'
-      description: 'description'
+      description: 'Badgers have low, wide bodies with short legs. The fur of a badger ranges from grayish to reddish along the back with a buff colored underside. Badgers have distinctive black patches on their face and a white stripe extending from nose, down the back.'
     bearBlack:
       label: 'Bear, Black'
       description: 'Black bears are large and heavily built.  They are usually black in color with a brown muzzle. Other uncommon color variations include brown or cinnamon. They have a short tail and prominent, round ears.'
     beaverAmerican:
       label: 'Beaver, American'
-      description: 'description'
+      description: 'Beavers have glossy fur that can appear reddish brown to blackish brown. They have a distinctive scaly paddle-shape tail. They have short, round ears and are typically found near water.'
     birds:
       label: 'Bird'
-      description: 'description'
+      description: 'If you see a bird that doesn’t already have its own category, you can mark it here.'
     bobcat:
       label: 'Bobcat'
-      description: 'description'
+      description: 'The coat of this cat varies from gray to reddish brown, typically with spots, especially on the belly. The bobcat has short tuffs on its ears. They have short tails that, on the tip, are black above with white below.'
     catDomestic:
       label: 'Cat, Domestic'
-      description: 'description'
-    chimpmunksAndSquirrels:
-      label: 'Chimpmunks and Squirrels'
-      description: 'description'
+      description: 'Feral or stray cats are small in size compared to wild cat species. Look for unique coloration or patterns not found in the wild.'
+    chipmunksAndSquirrels:
+      label: 'Chipmunks and Squirrels'
+      description: 'Because these animals are so small, they will becaptured infrequently by the camera. Common species in this category include the gray squirrel, red squirrel, 13-lined ground squirrel, eastern or least chipmunks, and flying squirrels. If you spot any of these, mark them here.'
     cottontailEastern:
       label: 'Cottontail, Eastern'
-      description: 'description'
+      description: 'The fur of this small rabbit is brown in color with longer gray and black guard hairs, giving it a grizzled appearance. Their ears are typically shorter than the hind feet and are small in proportion to the body.'
     cougar:
       label: 'Cougar'
-      description: 'description'
+      description: 'The coat of this large slender cat varies from yellowish brown to grayish brown with a lighter color belly and throat. Their head is relatively small and the area behind the ears is black. Cougars have a long black-tipped tail. Although there are no known breeding populations of cougar in Wisconsin, there have been several verified sightings in recent years.'
     coyote:
       label: 'Coyote'
-      description: 'description'
+      description: 'Coyotes have a distinctive pointed muzzle and pointed ears, which are large in proportion to the head.'
     craneSandhill:
       label: 'Crane, Sandhill'
-      description: 'description'
+      description: 'This tall bird is gray to brown. It has a bright red patch on the crest of the head and long black legs. Young are gray with scattered reddish brown feathers.'
     craneWhooping:
       label: 'Crane, Whooping'
-      description: 'description'
+      description: 'This tall bird is white in color with red facial skin and long black legs. Young are reddish brown with scattered white feathers.'
     deerWhiteTailed:
       label: 'Deer'
-      description: 'description'
+      description: 'Lightly built, whitetail deer are grayish brown to reddish brown in color. The underside of their short tail is white. Males have antlers which fork off a main branch and the young are reddish brown in color with white spots.'
     dogDomestic:
       label: 'Dog, Domestic'
-      description: 'description'
+      description: 'Domestic dogs come in all shapes and sizes. Look for unique coloration or patterns not found in the wild. Also look for signs of humans (including a collar or leash) to differentiate domestic dogs from their wild canid counterparts.'
     elk:
       label: 'Elk'
-      description: 'description'
+      description: 'Elk have a large, thick body with long slender legs. They have a dark brown head and neck, lighter body, and a cream colored rump. Males have antlers which fork off a main branch and a dark shaggy mane that hangs from the neck to the chest. The young have white spots.'
     fisher:
       label: 'Fisher'
-      description: 'description'
+      description: 'Fishers are medium in size and have dark brown bodies with long bushy tail. The head, neck, and shoulders can be a grizzled yellowish brown. Fishers may also have a cream colored patch on the chin or chest.'
     foxGray:
       label: 'Fox, Gray'
-      description: 'description'
+      description: 'These medium-size mammals have distinctive coloration. Their upper side is grizzled gray and cinnamon with a buff colored neck and underside. The long tail has a black stripe on the upper side and a black tip.'
     foxRed:
       label: 'Fox, Red'
-      description: 'description'
+      description: 'These medium-size mammals vary in color from yellowish red to reddish brown on the upper side with a white underside and nearly black legs. Red foxes have a bushy tail with a white tip. Other color variations include cross foxes (grizzled gray down back and across shoulders) and silver foxes (entire body silver to nearly black).'
     grouse:
       label: 'Grouse'
-      description: 'description'
+      description: 'Wisconsin is home to both spruce grouse and ruffed grouse. Both can appear red or gray in color. Ruffed grouse have a small crest on the top of the head with a black ruff on the sides of the neck. Male spruce grouse have a dark throat and breast.'
     hareSnowshoe:
       label: 'Hare, Snowshoe'
-      description: 'description'
+      description: "Hares' coloration varies with season. In the summer, hares have dark brown to reddish brown fur, and in the winter, the fur is white. Their coat is more homogenous than a cottontail rabbit. Hares have long feet and ears are large in proportion to the body."
     human:
       label: 'Human'
-      description: 'description'
+      description: 'Occasionally you may see humans or their vehicles (including cars, bikes, or ATV) using the same areas as wildlife.'
     jackrabbitWhiteTailed:
       label: 'Jackrabbit, White Tailed'
-      description: 'description'
+      description: "Jackrabbits' coloration varies with season. The upper side is grayish brown in color with gray or white on the underside, and in the winter, the fur is white. The tail is white year-round. Jackrabbits have ears which are longer then the head. Observation of this species in Wisconsin is rare."
     lynxCanada:
       label: 'Lynx'
-      description: 'description'
+      description: 'The coat of this cat varies from gray to grayish brown with spots on the legs and belly. The lynx has long black tuffs on the ears. They have short tails that are tipped black. In comparison to a bobcat, lynx have very large furry feet and long legs. Lynx are very uncommon in Wisconsin, although rare sightings of visitors from Canada do occur.'
     martenAmerican:
       label: 'Marten, American'
-      description: 'description'
+      description: 'This small, long-bodied animal has a bushy tail. The fur of a marten varies from dark brown to tan, usually with a paler head and dark legs. The throat of a marten is whitish cream to orange. The ears of a marten are relatively large and rounded. This is an uncommon species in Wisconsin.'
     minkAmerican:
       label: 'Mink, American'
-      description: 'description'
+      description: 'This small long-bodied animal is typically found near water. The fur of a mink is dark brown. Mink may sometimes have white patches on the chin and chest. Compared to a marten, they are more uniformly colored. Their face is flat and pointed.'
     moose:
       label: 'Moose'
-      description: 'description'
+      description: 'Moose are one of the largest land mammals in North America. They have a blackish brown body with a long nose. Males have large palmate antlers and the young are reddish brown. This is an uncommon species in Wisconsin.'
     muskrat:
       label: 'Muskrat'
-      description: 'description'
-    opposumVirginia:
+      description: 'The body of a muskrat is stout with dark brown fur. Muskrats have short rounded ears, barely protruding above the fur, and a rounded, scaly tail. They are typically found near water.'
+    opossumVirginia:
       label: 'Opposum, Virginia'
-      description: 'description'
+      description: 'Opossums have short legs and a thick body. They are typically grizzled gray in color with a white head. The tail is scaly and is black at the base with a white tip. Their large ears are mostly furless.'
     otherDomestic:
       label: 'Other Domestic'
-      description: 'description'
+      description: 'Occasionally you may see other domestic animals, such as swine or cattle.'
     otter:
       label: 'Otter'
-      description: 'description'
+      description: 'Otters are stocky, medium-sized mammals usually found near water. They have short, dense dark brown fur and are sleek in appearance. Otters have a muscular neck and thick tail which tapers at the tip.'
     pheasentRingNecked:
       label: 'Pheasent'
-      description: 'description'
+      description: 'This bird has a long pointed tail and short rounded wings. Males appear iridescent bronze with a green and black head. Males also have fleshy eye patches and a white neck ring. Overall females are a buff color and are more dull than males.'
     pigFeral:
       label: 'Pig, Feral'
-      description: 'description'
+      description: 'Feral pigs or wild hogs are stocky animals and can vary greatly in size and color. Compared to domestic swine, they have longer snouts, longer course hair, a straight tail, and may have tusks. This exotic species is not common in Wisconsin.'
     porcupineNorthAmerican:
       label: 'Porcupine'
-      description: 'description'
-    racoonNorthern:
-      label: 'Racoon'
-      description: 'description'
+      description: 'The body of a porcupine is stout and covered in quills, which are partially concealed by long guard hairs. Porcupines appear dark brown in color.'
+    raccoonNorthern:
+      label: 'Raccoon'
+      description: 'Raccoons are stocky with slender paws. They vary in color from gray to reddish brown to buff. Raccoons have a distinctive black mask across the eyes and a bushy tail with black rings.'
     skunkStriped:
       label: 'Skunk, Striped'
-      description: 'description'
+      description: 'Striped skunks are best distinguished by their coloration. They have a black body with a white striping pattern. Pattern can vary between individuals, but typically striped skunks have a white stripe on the top of their snout and forehead that extends down the back, splitting into a V-shape.'
     spottedSkunkEastern:
       label: 'Skunk, Spotted'
-      description: 'description'
+      description: 'This skunk is smaller than a striped skunk. It is black with a white patch on the forehead. Although the pattern varies across individuals, typically there are four to six broken white stripes along the body. Very few historical records of spotted skunks from Wisconsin exist.'
     turkeyWild:
       label: 'Turkey'
-      description: 'description'
+      description: 'This skunk is smaller than a striped skunk. It is black with a white patch on the forehead. Although the pattern varies across individuals, typically there are four to six broken white stripes along the body. Very few historical records of spotted skunks from Wisconsin exist.'
     weasel:
       label: 'Weasel'
-      description: 'description'
+      description: 'Wisconsin is home to least weasels, long-tailed weasels, and short-tailed weasels. These carnivores are small and have long, thin bodies with short legs. In the summer, species are brown to dark brown with a yellowish white underside, and in the winter, they are white. Some species have a black tipped tail.'
     wolfGray:
       label: 'Wolf, Gray'
-      description: 'description'
+      description: 'The gray wolf is the largest of wild canid species. Their fur is typically a mix of tan, brown, black, and cinnamon. Other uncommon color variations include both solid black and white. Wolves have a distinctive blocky muzzle with rounded, relatively short ears.'
     wolverine:
       label: 'Wolverine'
-      description: 'description'
+      description: 'This is a stocky mammal with short powerful legs. The fur of a wolverine is brown or brownish black with a blond band on the forehead and a blond band extending along the sides. They have a large head with small ears and sharp claws. This species is considered to be extirpated in Wisconsin, with no recent confirmed reports.'
     woodchuck:
       label: 'Woodchuck'
-      description: 'description'
+      description: 'This is a stocky mammal with short powerful legs. The fur of a wolverine is brown or brownish black with a blond band on the forehead and a blond band extending along the sides. They have a large head with small ears and sharp claws. This species is considered to be extirpated in Wisconsin, with no recent confirmed reports.'
 
   characteristics:
     like: 'Looks like...'
     coat: 'Coat'
     tail: 'Tail'
     build: 'Build'
-    
+
   characteristicValues:
     likeCatDog: 'Cat Dog'
     likeRodent: 'Rodent'
@@ -358,14 +358,14 @@ module.exports =
       nav: "About"
       header: "About"
       p: """
-        Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species. 
+        Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species.
         However, with proper management, urban areas can house a number of important wildlife species, including carnivores and small mammals.
         <br><br>
-        To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks, 
-        forest preserves, golf courses and cemeteries across a four-county area, including downtown Chicago and its suburbs. Motion-triggered cameras are deployed four 
+        To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks,
+        forest preserves, golf courses and cemeteries across a four-county area, including downtown Chicago and its suburbs. Motion-triggered cameras are deployed four
         times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
         <br><br>
-        Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and 
+        Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and
         ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
       """
     organizations:
@@ -374,8 +374,8 @@ module.exports =
       adler:
         header: "Adler Planetarium"
         p: """
-          The Adler Planetarium - America's First Planetarium - was founded in 1930 by Chicago business leader Max Adler. 
-          The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math. 
+          The Adler Planetarium - America's First Planetarium - was founded in 1930 by Chicago business leader Max Adler.
+          The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math.
           Throughout 80 years, the Adler has inspired the next generation of explorers by sharing the personal stories of space exploration and America’s space heroes.
         """
 

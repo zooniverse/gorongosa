@@ -2,6 +2,7 @@
   display: inline-block
   position: relative
   float: left
+  outline: none
 
   .image-and-filters
     background: white
@@ -47,11 +48,9 @@
         button
           box-sizing: border-box;
           padding: 0 10px;
-          background: $white;
-
           &:hover,
           &.selected
-            background: #ddd;
+            background-color: #ddd;
 
           img
             display: none;
@@ -102,7 +101,7 @@
         display: inline-block;
         float: left;
         margin: 2px;
-        background: $medium-blue;
+        background: $green;
         padding: 1px 5px 1px 10px;
 
         &.new
@@ -154,7 +153,7 @@
       font-size: 16px;
       padding: 5px 5px 0;
       right: 20px;
-      top: -3px;
+      top: -5px;
 
       &:hover
         padding-top: 10px;
@@ -354,55 +353,57 @@
         margin: 2px 0 0 5px;
         position: relative;
         width: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
 
         &.selected
           border: 1px solid $gold;
           margin: 3px 0 0 4px;
 
         &[value="coatTanYellow"]
-          background: url(images/characteristics-values/coatTanYellow.png)
+          background-image: url(images/characteristics-values/coatTanYellow.svg)
 
         &[value="coatRedBrown"]
-          background: url(images/characteristics-values/coatRedBrown.png)
+          background-image: url(images/characteristics-values/coatRedBrown.svg)
 
         &[value="coatBrownBlack"]
-          background: url(images/characteristics-values/coatBrownBlack.png)
+          background-image: url(images/characteristics-values/coatBrownBlack.svg)
 
         &[value="coatGrayBlack"]
-          background: url(images/characteristics-values/coatGrayBlack.png)
+          background-image: url(images/characteristics-values/coatGrayBlack.svg)
 
         &[value="coatMottled"]
-          background: url(images/characteristics-values/coatMottled.png)
+          background-image: url(images/characteristics-values/coatMottled.svg)
 
         &[value="coatSolid"]
-          background: url(images/characteristics-values/coatSolid.png)
+          background-image: url(images/characteristics-values/coatSolid.svg)
 
         &[value="coatOrTailStriped"]
-          background: url(images/characteristics-values/coatCoatOrTailStriped.png)
+          background-image: url(images/characteristics-values/coatOrTailStriped.svg)
 
         &[value="tailBushy"]
-          background: url(images/characteristics-values/tailBushy.png)
+          background-image: url(images/characteristics-values/tailBushy.svg)
 
         &[value="tailSmooth"]
-          background: url(images/characteristics-values/tailSmooth.png)
+          background-image: url(images/characteristics-values/tailSmooth.svg)
 
         &[value="tailLong"]
-          background: url(images/characteristics-values/tailLong.png)
+          background-image: url(images/characteristics-values/tailLong.svg)
 
         &[value="buildStocky"]
-          background: url(images/characteristics-values/buildStocky.png)
+          background-image: url(images/characteristics-values/buildStocky.svg)
 
         &[value="buildTall"]
-          background: url(images/characteristics-values/buildTall.png)
+          background-image: url(images/characteristics-values/buildTall.svg)
 
         &[value="buildLanky"]
-          background: url(images/characteristics-values/buildLanky.png)
+          background-image: url(images/characteristics-values/buildLanky.svg)
 
         &[value="buildSmall"]
-          background: url(images/characteristics-values/buildSmall.png)
+          background-image: url(images/characteristics-values/buildSmall.svg)
 
         &[value="buildLowSlung"]
-          background: url(images/characteristics-values/buildLowSlung.png)
+          background-image: url(images/characteristics-values/buildLowSlung.svg)
 
         .label
           bottom: 100%;

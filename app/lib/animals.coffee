@@ -1,6 +1,7 @@
 FilteringSet = require '../models/filtering_set'
 Animal = require '../models/animal'
 translate = require 't7e'
+animalCounts = require '../lib/animal_counts'
 
 #Chicago values
 values = [
@@ -23,7 +24,7 @@ animalCharacteristics = [
   {birds:                   [0,1,0,0,1,1,0,0,0,0,1,0,1,1,0,0,1,1]}
   {bobcat:                  [1,0,0,0,1,0,1,1,1,0,0,1,0,1,0,1,0,0]}
   {catDomestic:             [0,0,0,1,1,0,0,0,0,1,0,1,0,0,0,1,0,0]}
-  {chimpmunksAndSquirrels:  [1,0,0,0,1,1,1,1,1,1,1,1,0,1,1,1,0,0]}
+  {chipmunksAndSquirrels:   [1,0,0,0,1,1,1,1,1,1,1,1,0,1,1,1,0,0]}
   {cottontailEastern:       [1,0,0,0,0,0,0,1,1,0,0,1,0,1,0,0,0,0]}
   {cougar:                  [1,0,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0]}
   {coyote:                  [0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0]}
@@ -44,13 +45,13 @@ animalCharacteristics = [
   {minkAmerican:            [0,1,0,0,1,0,0,1,1,0,0,1,0,1,0,0,1,0]}
   {moose:                   [0,1,0,0,0,0,0,1,0,1,0,1,0,1,0,0,1,0]}
   {muskrat:                 [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
-  {opposumVirginia:         [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
+  {opossumVirginia:         [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
   {otherDomestic:           [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
   {otter:                   [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
   {pheasentRingNecked:      [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
   {pigFeral:                [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
   {porcupineNorthAmerican:  [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
-  {racoonNorthern:          [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
+  {raccoonNorthern:         [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
   {skunkStriped:            [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
   {spottedSkunkEastern:     [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
   {turkeyWild:              [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
@@ -60,20 +61,20 @@ animalCharacteristics = [
   {woodchuck:               [0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1]}
 ]
 
-
 dashedFromId = (id) ->
   id.replace /[A-Z]/g, (cap) -> "-#{cap.toLowerCase()}"
 
-imagesFromId = (id) -> [
-    "http://placehold.it/350x150&text=#{dashedFromId id}"
-    "http://placehold.it/350x150&text=#{dashedFromId id}"
-    "http://placehold.it/350x150&text=#{dashedFromId id}"
-  ]  
+imagesFromId = (id) ->
+  animalName = dashedFromId id
+  animalCount = animalCounts[animalName]
+  [0...animalCount].map (i) ->
+    "images/animals/#{dashedFromId id}-#{i + 1}.jpg"
 
 animals = new FilteringSet
   searchProperties: ['label', 'description']
   items: for item in animalCharacteristics
     for id, grid of item
+      console.log "dashedFromId", dashedFromId id
       animal = new Animal
         id: id
         label: translate('span', "animals.#{id}.label")
