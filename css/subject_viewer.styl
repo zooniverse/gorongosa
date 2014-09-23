@@ -9,6 +9,8 @@
     border-radius: 5px
     box-sizing: border-box
     padding: 10px 10px 94px 10px
+    @media $classifier-vertical-stack-breakpoint
+      border-radius: 5px 5px 0 0
 
     .filter-menu
       font-size: 14px;
@@ -68,12 +70,8 @@
     position: relative
 
     .subject-image
-      box-sizing: border-box;
-      left: 0;
-      margin: 0;
-      overflow: hidden;
-      top: 0;
-      width: 570px
+      @media screen and (min-width: 1020px) // classifier vertical stack breakpoint
+        width: 570px;
       @media $phone-or-smaller
         min-height: 0;
 
@@ -198,11 +196,12 @@
       left: auto;
       width: auto;
       right: 0%;
-      top: 485px;
-      margin-right: 5px;
+      top: 465px;
+      margin-right: 10px;
 
     @media $classifier-full-width-breakpoint
       padding: 5px;
+      top: 90%;
 
   .controls
     .finished
