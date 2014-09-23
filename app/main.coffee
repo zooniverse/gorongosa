@@ -2,6 +2,8 @@ translate = require 't7e'
 enUs = require './lib/en-us'
 translate.load enUs
 
+Notifier = require './lib/notifier'
+
 $ = window.jQuery
 
 require 'spine'
@@ -45,6 +47,7 @@ stack = new Stack
 
 stack.el.appendTo  'body'
 
+Notifier.init()
 Footer = require 'zooniverse/controllers/footer'
 footer = new Footer
 siteFooter = $('<div class="site-footer"></div>').append footer.el
