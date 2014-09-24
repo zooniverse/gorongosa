@@ -1,48 +1,57 @@
 $ = window.jQuery
 
-# Notifier.init() to create it
+# Notifier.init() to add to document
+# Notifier.message("foo") to display html
+# pass in a background color: Notifier.message("bar", "#fff")
+# add a continue button to the bottom of it: Notifier.message("bar", "#000", true)
+# it will display below the anchor element
+# Notifier.hide() to close it
 
-# Notifier.message("foo") to message to users
-# pass in a default color Notifier.message("bar", Notifier.blue)
-# or a hex string Notifier.message("baz" , "#123ABC")
-
-# Notifier.hide() to make it go away
-
-class Notifier
-  @init: ->
-    @el = $("<div id='notifier'><img class='notifier-close' src='./images/x-icon.svg'><div class='notifier-content'></div>")
-      .appendTo $('body')
+Notifier =
+  init: ->
+    @el = $("
+      <div id='notifier'>
+        <img class='notifier-close' src='./images/x-icon.svg'>
+        <div class='notifier-content'></div>
+        <button class='action-button'>Continue</button>
+      ")
+    @el.appendTo $('body')
 
     @content = @el.find('.notifier-content')
-    @closeIcon = @el.find('.notifier-close')
-      .on 'click', @hide
+    @actionButton = @el.find('.action-button')
+    @closeIcon = @el.find('.notifier-close, .action-button')
+      .on 'click', => @hide()
+
     window.onresize = => @setPosition() if @notifierIsVisible()
 
-  @green: "#3EA535"
-  @grey: "#808080"
-  @red: "#ee4737"
-  @blue: "#2099de"
+  green: "#3EA535"
+  grey: "#808080"
+  red: "#ee4737"
+  blue: "#2099de"
+  white: "#fff"
 
-  @anchor: -> $(".site-navigation")
+  anchor: -> $(".site-navigation")
 
-  @show: (transitionTime = 150) =>
+  show: (transitionTime = 150) ->
     @setPosition().slideDown(transitionTime)
 
-  @notifierIsVisible: ->
+  notifierIsVisible: ->
     @el.is(':visible')
 
-  @setPosition: ->
+  setPosition: ->
     @el.css {top: @topOffset()}
 
-  @topOffset: ->
+  topOffset: ->
     anchor = @anchor()
     anchor.innerHeight() - anchor.position().top
 
-  @hide: (transitionTime = 150) =>
+  hide: (transitionTime = 150) ->
     @el.slideUp(transitionTime)
 
-  @message: (message, backgroundColor) ->
-    @show().css {backgroundColor: backgroundColor or @grey}
-    @content.html message
+  message: (message, backgroundColor = @white, action = false) ->
+    setTimeout =>
+      @show().css {backgroundColor: backgroundColor}
+      @content.html message
+      @actionButton.toggle(action)
 
 module?.exports = Notifier

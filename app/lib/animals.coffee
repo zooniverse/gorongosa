@@ -74,7 +74,6 @@ animals = new FilteringSet
   searchProperties: ['label', 'description']
   items: for item in animalCharacteristics
     for id, grid of item
-      console.log "dashedFromId", dashedFromId id
       animal = new Animal
         id: id
         label: translate('span', "animals.#{id}.label")
