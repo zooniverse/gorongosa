@@ -278,8 +278,8 @@ module.exports =
     otter:
       label: 'Otter'
       description: 'Otters are stocky, medium-sized mammals usually found near water. They have short, dense dark brown fur and are sleek in appearance. Otters have a muscular neck and thick tail which tapers at the tip.'
-    pheasentRingNecked:
-      label: 'Pheasent'
+    pheasantRingNecked:
+      label: 'Pheasant'
       description: 'This bird has a long pointed tail and short rounded wings. Males appear iridescent bronze with a green and black head. Males also have fleshy eye patches and a white neck ring. Overall females are a buff color and are more dull than males.'
     pigFeral:
       label: 'Pig, Feral'
