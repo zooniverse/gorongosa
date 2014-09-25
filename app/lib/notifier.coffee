@@ -14,6 +14,7 @@ Notifier =
         <img class='notifier-close' src='./images/x-icon.svg'>
         <div class='notifier-content'></div>
         <button class='action-button'>Continue</button>
+      </div>
       ")
     @el.appendTo $('body')
 
