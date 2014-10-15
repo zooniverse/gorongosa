@@ -14,7 +14,7 @@
 
   <% differences = translate "differences.#{@id}" %>
   <% unless typeof differences is 'string': %>
-    <p>
+    <p class="often-confused-with">
       <%- translate 'span', 'classify.oftenConfused' %>
       <% for animalId of differences: %>
         <% animal = try Animal.find animalId %>
