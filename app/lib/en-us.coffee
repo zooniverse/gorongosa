@@ -298,7 +298,7 @@ module.exports =
       description: 'This skunk is smaller than a striped skunk. It is black with a white patch on the forehead. Although the pattern varies across individuals, typically there are four to six broken white stripes along the body. Very few historical records of spotted skunks from Wisconsin exist.'
     turkeyWild:
       label: 'Turkey'
-      description: 'This skunk is smaller than a striped skunk. It is black with a white patch on the forehead. Although the pattern varies across individuals, typically there are four to six broken white stripes along the body. Very few historical records of spotted skunks from Wisconsin exist.'
+      description: 'This large bird appears iridescent bronze in color with alternating dark and light bands on the wing and tail feathers. Their heads are featherless. Males’ heads are red and they have a group of bristles hanging from their chest, called a beard.'
     weasel:
       label: 'Weasel'
       description: 'Wisconsin is home to least weasels, long-tailed weasels, and short-tailed weasels. These carnivores are small and have long, thin bodies with short legs. In the summer, species are brown to dark brown with a yellowish white underside, and in the winter, they are white. Some species have a black tipped tail.'
@@ -310,7 +310,7 @@ module.exports =
       description: 'This is a stocky mammal with short powerful legs. The fur of a wolverine is brown or brownish black with a blond band on the forehead and a blond band extending along the sides. They have a large head with small ears and sharp claws. This species is considered to be extirpated in Wisconsin, with no recent confirmed reports.'
     woodchuck:
       label: 'Woodchuck'
-      description: 'This is a stocky mammal with short powerful legs. The fur of a wolverine is brown or brownish black with a blond band on the forehead and a blond band extending along the sides. They have a large head with small ears and sharp claws. This species is considered to be extirpated in Wisconsin, with no recent confirmed reports.'
+      description: 'This small stocky animal is typically grizzled brown with a dark legs and tail, but can be blackish in color. The top of their head is dark brown and the cheeks cream-brown.'
 
   characteristics:
     like: 'Looks like...'
@@ -385,10 +385,10 @@ module.exports =
       organizations: 'Organizations'
 
     bios:
-      townsend: ''
+      townsend: 'Phil Townsend is a professor of Forest &amp; Wildlife Ecology at the University of Wisconsin. He is interested in how different components of ecosystems interact across landscapes, for example how nutrients and water affect vegetation, and then how patterns of vegetation processes affect insects and animals. He is particularly interested in how we can leverage a range of technologies including remote sensing to better understand ecosystems.'
       zuckerberg: 'Dr. Benjamin Zuckerberg is an assistant professor in the Department of Forest and Wildlife Ecology at the University of Wisconsin-Madison. His research focuses on how climate change and habitat loss impacts wildlife populations. He is a strong advocate for the role of the public in collecting biological data. Using the data from these “citizen science” programs, Ben has studied shifts in bird ranges and migration in response to a changing climate.'
-      deelen: ''
-      singh: ''
+      deelen: 'Tim Van Deelen has been on the faculty at the UW-Madison since 2004. Tim’s research specializes in the applied management of wildlife with an emphasis on large mammals in Wisconsin and is a frequent collaborator with the Wisconsin DNR and the Apostle Islands National Lakeshore. Prior positions include working as the research specialist for deer in the Wisconsin Department of Natural Resources and as a Research Scientist for the Illinois Natural History Survey where he had a joint appointment with the University of Illinois at Urbana-Champaign.'
+      singh: 'Aditya Singh is a post-doctoral scientist with the Department of Forest and Wildlife Ecology at the University of Wisconsin-Madison. He uses a combination of airborne and remotely sensed data to study the impacts of environmental change and disturbance on landscape-scale indicators of ecosystem health.'
       stenglein: 'Dr. Jennifer Stenglein is a quantitative wildlife research scientist with the Wisconsin Department of Natural Resources where she works on trail camera monitoring of Wisconsin’s wildlife. She is interested in getting students and the public involved in wildlife monitoring and using those data to understand spatial patterns and temporal trends in wildlife populations.'
       martin: 'Karl Martin is the State Director for the Community, Natural Resource and Economic Development Program and an Assistant Dean with the University of Wisconsin Cooperative Extension. He is an adjunct Associate Professor at the University of Wisconsin-Madison’s Forest and Wildlife Ecology Department and recently served as the Wildlife and Forestry Research Section Chief at the Wisconsin Department of Natural Resources. Karl received his Bachelors degree in Wildlife Ecology at UW-Madison and his Masters and Doctorate degrees at Oregon State University. Karl’s research has focused on interaction of forest management and multi-scale wildlife habitat relationships. His current position focuses on the ‘Wisconsin Idea’ of taking the information and resources of the University to communities and citizens of the state.'
       anhalt: 'Christine Anhalt is a research scientist with the Wisconsin Department of Natural Resources where she assists with coordinating the Snapshot Wisconsin project. She completed a Master’s degree in conservation biology at University of Wisconsin-Madison. Christine’s research has focused on human-wildlife interactions.'

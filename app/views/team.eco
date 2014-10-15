@@ -16,7 +16,7 @@
     <div class="left-column">
       <div class="content" data-nav="people">
         <h2>The Snapshot Wisconsin Team</h2>
-        <% teamMembers = ['Phil Townsend', 'Ben Zuckerberg', 'Tim Van Deelen', 'Aditya Singh', 'Jennifer Stenglein', 'Karl Martin', 'Chrstine Anhalt'] %>
+        <% teamMembers = ['Phil Townsend', 'Ben Zuckerberg', 'Tim Van Deelen', 'Aditya Singh', 'Jennifer Stenglein', 'Karl Martin', 'Christine Anhalt'] %>
         <% for teamMember in teamMembers: %>
           <div class="team-member">
             <h3><%- teamMember %></h3>
@@ -30,7 +30,7 @@
         <h2>Participating Organizations</h2>
         <div class="team-member">
           <h3>Wisconsin Department of Natural Resources</h3>
-          <img src="./images/logos/wdnr.png">
+          <img src="./images/logos/wdnr.jpg">
           <p>Members of the Snapshot Wisconsin team are scientists at the Wisconsin Department of Natural Resources (WDNR). The WDNR provided funding for the purchase of trail cameras and provides ongoing support for the project. The WDNR, in partnership with individuals and organizations, manages "fish, wildlife, forests, parks, air and water resources while promoting a healthy, sustainable environment and a full range of outdoor opportunities."</p>
         </div>
 
