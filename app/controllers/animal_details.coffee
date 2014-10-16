@@ -52,11 +52,13 @@ class AnimalDetails extends Controller
     delta = parseFloat $(currentTarget).val()
     @imageChanger.activate @imageChanger.active + delta
 
+  # Add additional restrictions on "Identify" here. 
+  # ex. @identifyButton.attr disabled: (not count) or (behaviors.length is 0)
   onInputChange: ->
     setTimeout =>
       count = @getCount()
       behaviors = @getBehaviors()
-      @identifyButton.attr disabled: (not count) or (behaviors.length is 0)
+      @identifyButton.attr disabled: (not count)
 
   getCount: ->
     @countRadios.filter(':checked').val()
