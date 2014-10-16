@@ -9,6 +9,7 @@
     <div class="sub-nav">
       <button name="people"><%- t 'span', 'team.navigation.people' %></button>
       <button name="organizations"><%- t 'span', 'team.navigation.organizations' %></button>
+      <button name="image-credits"><%- t 'span', 'team.navigation.credit' %></button>
     </div>
   </div>
 
@@ -57,6 +58,79 @@
           <img src="./images/logos/adler.jpg">
           <p>The Adler Planetarium was founded in 1930 by Chicago business leader Max Adler. A recognized leader in public learning, the Adler inspires young people -particularly women and minorities - to pursue careers in science, technology, engineering, and math. Scientists, historians and educators at the museum inspire the next generation of explorers.</p>
         </div>
+      </div>
+
+      <div class="content" data-nav="image-credits">
+        <h2>Image Credits</h2>
+        <figure>
+          <img src="./images/animals/beaver-american-1.jpg">
+          <figcaption>American Beaver, Steve Hillebrand, USFWS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/beaver-american-2.jpg">
+          <figcaption>American Beaver, USFWS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/muskrat-1.jpg">
+          <figcaption>Muskrat, R. Town, USFWS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/moose-1.jpg">
+          <figcaption>Moose, Steve Hillebrand, USFWS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/pheasant-ring-necked-1.jpg">
+          <figcaption>Ring-Necked Pheasent, Dave Menke, USFWS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/pheasant-ring-necked-2.jpg">
+          <figcaption>Ring-Necked Pheasent, Dave Menke, USFWS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/crane-whooping-1.jpg">
+          <figcaption>Whooping Crane, Steve Hillebrand, USFWS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/crane-whooping-2.jpg">
+          <figcaption>Whooping Crane, Ryan Hagerty, USFWS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/amphibians-and-reptiles-1.jpg">
+          <figcaption>Turtle and frog, USFWS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/lynx-canada-1.jpg">
+          <figcaption>Canada lynx, Jacob Frank, NPS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/wolverine-1.jpg">
+          <figcaption>Wolverine, NPS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/woodchuck-1.jpg">
+          <figcaption>Woodchuck, Andrew MacLachlan, USFWS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/jackrabbit-white-tailed-1.jpg">
+          <figcaption>White-tailed jackrabbit, FWS</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/animals/spotted-skunk-eastern-1.jpg">
+          <figcaption>Spotted skunk, NPS</figcaption>
+        </figure>
       </div>
     </div>
 

@@ -383,6 +383,7 @@ module.exports =
     navigation:
       people: 'People'
       organizations: 'Organizations'
+      credit: 'Image Credits'
 
     bios:
       townsend: 'Phil Townsend is a professor of Forest &amp; Wildlife Ecology at the University of Wisconsin. He is interested in how different components of ecosystems interact across landscapes, for example how nutrients and water affect vegetation, and then how patterns of vegetation processes affect insects and animals. He is particularly interested in how we can leverage a range of technologies including remote sensing to better understand ecosystems.'
