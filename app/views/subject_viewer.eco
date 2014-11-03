@@ -1,7 +1,4 @@
 <% translate = require 't7e' %>
-<% sponsoredCameraTraps = window.SERENGETI_SPONSORED_CAMERA_TRAPS || {} %>
-
-<div class="classifier-title">Image View</div>
 
 <div class="image-and-filters">
   <div class="images">
