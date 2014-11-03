@@ -17,6 +17,8 @@
 <section>
   <div class="home-section right">
     <div class="content">
+      <h2>What is Snapshot Wisconsin?</h2>
+      <p>Snapshot Wisconsin is a partnership with citizens and educators to monitor wildlife year-round with a network of trail cameras across Wisconsin. Help us to identify the animals captured on camera and better understand the distribution and trends of our wildlife populations.</p>
       <p class="action">
         <%- translate 'a', 'home.action', href: '#/classify' %>
       </p>

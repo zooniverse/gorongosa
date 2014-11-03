@@ -33,19 +33,32 @@
           padding: 0px 50px;
 
     &.left
-      background-color: $green-dark
-      float: left;
+      background: url(images/home.jpg) no-repeat
+      position: relative
+      float: left
+
+      &:before
+        background: linear-gradient(0deg, rgba($green-really, 0.4), rgba($green-really, 0.4))
+        content: " "
+        height: 100%
+        left: 0
+        position: absolute
+        top: 0
+        width: 100%
+
       .content
+        position: relative
+
         h1
-          font-size: 60px;
-          line-height: 60px;
-          margin: 0 auto 20px auto;
-          font-weight: 300;
+          font-size: 60px
+          line-height: 60px
+          margin: 0 auto 20px auto
+          font-weight: 300
 
     &.right
       float: right;
       color: $gray;
-      background-color: $green-light;
+      background-color: #555;
       .content
         h2
           color: #fff;
