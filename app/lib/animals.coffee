@@ -3,7 +3,6 @@ Animal = require '../models/animal'
 translate = require 't7e'
 animalCounts = require '../lib/animal_counts'
 
-#Chicago values
 values = [
   'likeCatDog','likeRodent','likeManMade','likeOther',
   'coatTanYellow','coatRedBrown','coatBrownBlack','coatGrayBlack','coatMottled','coatSolid','coatOrTailStriped',
@@ -11,11 +10,9 @@ values = [
   'buildStocky','buildLanky','buildSmall','buildLowSlung',
 ]
 
-#Chicago Characteristics
 # The order of characteristics is derived from the list of values.
 characteristics = ['like', 'coat','tail', 'build']
 
-#Chicago animal  characteristics
 animalCharacteristics = [
   {amphibiansAndReptiles:   [0,1,0,1,0,1,1,0,0,0,0,0,0,1,1,0,0,1]}
   {badgerAmerican:          [0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}
