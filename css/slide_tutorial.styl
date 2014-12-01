@@ -1,0 +1,27 @@
+.slide-tutorial
+  z-index: 100
+
+  .slide-tutorial-container
+    border-radius: 5px
+
+    .slide-tutorial-dots
+      .slide-tutorial-dot
+        cursor: pointer
+        margin: 0 3px
+
+    .slide-tutorial-next-button
+      background: $green
+      padding: 10px 20px
+      color: #fff
+      border-radius: 5px
+
+    .slide-tutorial-dots
+      .slide-tutorial-dot
+        &.active
+          background: $green
+
+    .slide-tutorial-close-button
+      color: #fff
+      top: 5px
+      right: 10px
+      font-size: 20px

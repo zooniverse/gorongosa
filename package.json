@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "dependencies": {
     "haw": "~0.5.0",
-    "t7e": "~0.3.1",
+    "publisssh": "~0.2.5",
+    "slide-tutorial": "0.0.4",
     "spine": "1.0.7",
+    "t7e": "~0.3.1",
     "zooniverse": "~0.7.1",
-    "zootorial": "~0.2.0",
-    "publisssh": "~0.2.5"
-  }, 
+    "zootorial": "~0.2.0"
+  },
   "scripts": {
     "start": "haw serve --port 6001",
     "deploy-to-staging": "haw build && publisssh ./build demo.zooniverse.org/wisconsin-zoo && rm -rf ./build",

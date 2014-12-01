@@ -5,6 +5,8 @@ columnize = require '../lib/columnize'
 AnimalDetails = require './animal_details'
 getTutorialSubject = require '../lib/get_tutorial_subject'
 getPhysicallyAdjacentSibling = require '../lib/get_physically_adjacent_sibling'
+SlideTutorial = require 'slide-tutorial'
+slides = require '../lib/tutorial_slides'
 
 class AnimalSelector extends Controller
   set: null
@@ -37,6 +39,9 @@ class AnimalSelector extends Controller
 
     @onSetFilter @set.items
     @onSetSearch @set.items
+
+    @slideTutorial = new SlideTutorial
+      slides: slides
 
   createFilterMenus: ->
     for characteristic in @characteristics
@@ -149,6 +154,6 @@ class AnimalSelector extends Controller
     @searchInput.trigger 'keydown'
 
   onClickStartTutorial: ->
-    getTutorialSubject().select()
+    @slideTutorial.start()
 
 module.exports = AnimalSelector
