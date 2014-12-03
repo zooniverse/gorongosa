@@ -9,6 +9,8 @@
 </div>
 
 <div class="content">
+  <% animalName = translate "animals.#{@id}.label" %>
+
   <%- translate 'p.label', "animals.#{@id}.label" %>
   <%- translate 'p', "animals.#{@id}.description" %>
 
@@ -46,16 +48,34 @@
 </div>
 
 <div class="options">
-  <div class="count group">
-    <span class="title"><%- translate 'span', 'classify.count' %>:</span>
-    <% countKeys = [1, 2, 3, 4, 5, '+'] %>
-    <% for count, i in [1, 2, 3, 4, 5, '6+']: %>
-      <label>
-        <input type="radio" name="count" value="<%= count %>" data-shortcut="<%= countKeys[i] %>" />
-        <span class="label" title="[<%= countKeys[i] %>]"><%= count %></span>
-      </label>
+  <% if Animal.isDeer(animalName): %>
+    <!-- Special fields for deer *move this to model if other animals need special attrs -->
+    <% for label in Animal.deerAttributes: %>
+      <div class="count group">
+        <span class="title"><%- translate 'span', "classify.deer.#{label}" %>:</span>
+        <% countKeys = [1, 2, 3, 4, 5, '+'] %>
+        <% for count, i in [0, 1, 2, 3, 4, 5, '6+']: %>
+          <label>
+            <input type="radio" name="<%= label %>" value="<%= count %>" data-shortcut="<%= countKeys[i] %>" />
+            <span class="label" title="[<%= countKeys[i] %>]"><%= count %></span>
+          </label>
+        <% end %>
+      </div>
     <% end %>
-  </div>
+
+  <% else: %>
+    <div class="count group">
+      <span class="title"><%- translate 'span', 'classify.count' %>:</span>
+      <% countKeys = [1, 2, 3, 4, 5, '+'] %>
+      <% for count, i in [1, 2, 3, 4, 5, '6+']: %>
+        <label>
+          <input type="radio" name="count" value="<%= count %>" data-shortcut="<%= countKeys[i] %>" />
+          <span class="label" title="[<%= countKeys[i] %>]"><%= count %></span>
+        </label>
+      <% end %>
+    </div>
+
+  <% end %>
 
   <div class="behavior group">
     <span class="title"><%- translate 'span', 'classify.behavior' %>:</span>

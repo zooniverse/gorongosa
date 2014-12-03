@@ -46,6 +46,11 @@ module.exports =
 
     count: 'How many'
 
+    deer:
+      fawns: "Fawns"
+      antlered: "Antlered"
+      antlerless: "Antlerless"
+
     behavior: 'Behavior'
     behaviors:
       headUp: 'Head Up'

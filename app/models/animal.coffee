@@ -17,4 +17,8 @@ class Animal extends Model
 
   toJSON: -> @id
 
+  @isDeer: (name) -> name.toLowerCase() is 'deer'
+
+  @deerAttributes: ['fawns', 'antlerless', 'antlered']
+
 module.exports = Animal

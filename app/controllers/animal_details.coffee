@@ -2,6 +2,7 @@
 template = require '../views/animal_details'
 PopupButton = require './popup_button'
 ImageChanger = require './image_changer'
+Animal = require '../models/animal'
 
 class AnimalDetails extends Controller
   animal: null
@@ -57,8 +58,11 @@ class AnimalDetails extends Controller
   onInputChange: ->
     setTimeout =>
       count = @getCount()
-      behaviors = @getBehaviors()
-      @identifyButton.attr disabled: (not count)
+
+      deerValues = @deerValues()
+      deer = deerValues.length is 3 and deerValues.reduce (t, v) -> t + v
+
+      @identifyButton.attr disabled: (not count) and (not deer)
 
   getCount: ->
     @countRadios.filter(':checked').val()
@@ -78,7 +82,8 @@ class AnimalDetails extends Controller
     @classification.annotate
       species: @animal
 
-      count: @getCount()
+      count: @getCount() ? @deerDisplayCount()
+      deer: @getDeer()
       behavior: @getBehaviors()
       babies: @getBabies()
 
@@ -86,5 +91,23 @@ class AnimalDetails extends Controller
       search: @set.searchString
 
     @hide()
+
+  # Deer specific methods: Deer are handled separately
+  # since the count is sub-divided by attribute and additional
+  # classification data is required
+  deerValues: -> (parseInt(v, 10) for _, v of @getDeer())
+
+  deerDisplayCount: ->
+    values = @deerValues()
+    sum = values.reduce (t, v) -> t + v
+    manyDeer = !!~values.indexOf(6)
+    sum + (if manyDeer then '+' else '') # restore '+' character if user selected 6+ for any counts
+
+  getDeer: ->
+    Animal.deerAttributes.reduce (obj, name) =>
+      val = @el.find("input[name='#{name}']:checked").val()
+      obj[name] = val if parseInt(val, 10) >= 0
+      obj
+    , {}
 
 module.exports = AnimalDetails
