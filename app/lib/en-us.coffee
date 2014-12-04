@@ -13,6 +13,7 @@ module.exports =
     heading: 'Welcome to Snapshot Wisconsin'
     rightBannerHeader: "What is Snapshot Wisconsin?"
     action: 'Get Started'
+    nasa: 'In partnership with NASA'
     currentStatus: '<span class="classification-count">0</span> classifications by <span class="user-count">0</span> volunteers'
 
     stats:

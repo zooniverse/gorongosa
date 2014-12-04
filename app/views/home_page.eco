@@ -59,6 +59,7 @@
       <a href="http://www.nasa.gov">
         <img src="./images/logos/nasa.gif" alt="NASA"/>
       </a>
+      <%- translate 'p', 'home.nasa' %>
     </div>
   </div>
 </section>
