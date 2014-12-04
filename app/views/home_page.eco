@@ -52,3 +52,13 @@
     </div>
   </div>
 </section>
+
+<section>
+  <div class="home-pre-footer">
+    <div class="content">
+      <a href="http://www.nasa.gov">
+        <img src="./images/logos/nasa.gif" alt="NASA"/>
+      </a>
+    </div>
+  </div>
+</section>
