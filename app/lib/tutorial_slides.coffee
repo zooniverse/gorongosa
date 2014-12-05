@@ -2,7 +2,7 @@ translate = require 't7e'
 
 module?.exports = [
   {
-    image: "http://placehold.it/400X200&text=slide%201"
+    image: "./images/tutorial/intro.jpg"
     title: translate "span", 'siteIntro.s1.title'
     content: translate "span", 'siteIntro.s1.content'
   }
@@ -22,7 +22,7 @@ module?.exports = [
     content: translate "span", 'siteIntro.s4.content'
   },
   {
-    image: "http://placehold.it/400X200&text=slide%205"
+    image: "./images/tutorial/finale.jpg"
     title: translate "span", 'siteIntro.s5.title'
     content: translate "span", 'siteIntro.s5.content'
   }
