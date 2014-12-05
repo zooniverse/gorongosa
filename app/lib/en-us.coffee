@@ -23,6 +23,24 @@ module.exports =
       totalImages: "Images Total"
       complete: "Complete"
 
+  siteIntro:
+    s1:
+      title: "Welcome!"
+      content: "Welcome to Snapshot Wisconsin! In this project, we are asking you to identify animals found in camera trap photos from around the city. Your help allows us to continue our research into urban biodiversity, making the city a better home for both humans and animals."
+    s2:
+      title: "Identifying animals"
+      content: "You are presented with a photo on the left and a list of potential animals on the right. When you spot an animal within a photo, simply click the corresponding animal on the right. You will be asked to supply some followup info, such as the number of animals found in the image."
+    s3:
+      title: "Filtering by characteristics"
+      content: "Occasionally it is difficult to determine which animal is in the photo. Just above the list of animals is a variety of methods to filter the animal list. Selecting different options reduces the number of choices, making your job easier."
+    s4:
+      title: "Made a mistake?"
+      content: "If you need to delete any of your existing marks while viewing an image, simply find your animal in the list below the image and click the 'X' icon. Don’t worry if you’re unsure about your choices, though—even a guess is more helpful than nothing!"
+    s5:
+      title: "That's it!"
+      content: "That's it! You may catch up on project updates either on the blog or through speaking with other volunteers."
+
+
   classify:
     deleteAnnotation: 'Delete'
     notSignedIn: 'You\'re not signed in!'
