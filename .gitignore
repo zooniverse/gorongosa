@@ -3,3 +3,5 @@ public/mockdata.json
 .DS_Store
 public/tiles
 npm-debug.log
+/data-import/inputs/*
+/data-import/outputs/*
