@@ -6,7 +6,7 @@ module.exports =
     team: 'Team'
     education: 'Education'
     profile: 'Profile'
-    discuss: 'Discuss'
+    talk: 'Talk'
     blog: 'Blog'
 
   home:
