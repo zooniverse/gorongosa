@@ -68,6 +68,7 @@ module.exports =
       fawns: "Fawns"
       antlered: "Antlered"
       antlerless: "Antlerless"
+      notVisible: "Antlers not visible"
 
     behavior: 'Behavior'
     behaviors:
@@ -82,126 +83,6 @@ module.exports =
 
     cancel: 'Cancel'
     identify: 'Identify'
-
-    tutorial:
-      button: "View Tutorial"
-      continueButton: 'Continue'
-
-      welcomeHeader: 'Welcome to Snapshot Serengeti!'
-      welcome: '''
-        This short tutorial will walk you through your first classification. Let's get started!
-      '''
-
-      trapsHeader: 'Check out the Images'
-      traps: '''
-        All over the Serengeti, scientists have set up motion sensitive camera traps.
-        The camera snaps a few shots anytime something moves in front of it.
-
-        The photos often come as a sequence of 2 or 3, called a "capture".
-
-        Check out other snapshots in the sequence using the buttons below the image,
-        or play them like a flipbook by clicking the play button.
-      '''
-
-      taskHeader: 'Identify the Animals'
-      task: '''
-        Your task is to identify all the different animals that appear in the photos.
-        The species that will appear are listed here.
-
-        It's a big list, and some species may be unfamiliar,
-        but there are a few ways to narrow that list down using the characteristics you see.
-      '''
-
-      chooseAntelopeHeader: 'Looks like...'
-      chooseAntelope: '''
-        The animal in the foreground of this photo looks like a large antelope of some kind.
-
-        Let's choose "Antelope/deer" from the "looks like" menu.
-      '''
-
-      chooseSolidHeader: 'Characteristic: Pattern'
-      chooseSolid: '''
-        Let's narrow the list down a bit by choosing the solid swatch from the "Pattern" menu.
-      '''
-
-      chooseCurlyHeader: 'Characteristic: Horns'
-      chooseCurly: '''
-        We've narrowed the list down enough to see thumbnail previews of the remaining animals.
-
-        Choose the "Curly" icon from the "Horns" menu to narrow the list down further.
-      '''
-
-      chooseWildebeestHeader: 'Make a choice'
-      chooseWildebeest: '''
-        Great, that leaves us with just one option!
-        Let's choose "Wildebeest" it and make sure it's a match.
-      '''
-
-      confirmWildebeestHeader: 'Looks Good!'
-      confirmWildebeest: '''
-        By comparing the animal to to the photos here and reading the description below, we can confirm that this is indeed a wildebeest.
-        You can flip through the photos to see examples of the animal from multiple angles using the bullets on the right.
-      '''
-
-      identifyWildebeestHeader: 'Count & Behavior'
-      identifyWildebeest: '''
-        Once you're confident that this is a wildebeest,
-        choose "1" from the count menu and "Moving" from the behavior menu.
-        Then click "Identify."
-      '''
-
-      findZebrasHeader: 'Identify another animal'
-      findZebras: '''
-        We want to try to identify all the animals in each capture.
-        Look closely and you'll notice that there are some zebras in the distance.
-
-        Let's look at another way of classifying when we already know which species we can see.
-      '''
-
-      typeZebraHeader: 'Search'
-      typeZebra: '''
-        The seach field is a quick way to highlight animals whose descriptions contain certain words.
-
-        Type "zebra" in the search field...
-      '''
-
-      clickZebraHeader: 'Search'
-      clickZebra: '''
-        ...and click "Zebra," which is the only animal highlighted.
-      '''
-
-      confirmZebraHeader: 'Just do your best!'
-      confirmZebra: '''
-        It's hard to make out the zebras in the distance, so classify as best you can.
-        Each classification is compared with the classifications of other volunteers, so even if you're not sure, just try your best!
-      '''
-
-      identifyZebraHeader: 'Count & Behavior'
-      identifyZebra: '''
-        There are two zebras in the distance, and they appear to be grazing with their heads bowed.
-        Mark "2," "Standing," and "Eating," then click "Identify."
-      '''
-
-      finishHeader: 'Nice Job!'
-      finish: '''
-        Now you're ready to classify some images on your own.
-
-        In each image, do your best to identify all the animals you can,
-        even if you can't see enough to be completely sure.
-        If there aren't any animals in an image, check "Nothing here" and then "Finish."
-
-        Your observations will be combined with those of multiple volunteers,
-        so even if you're not sure on something, your contribution is still very useful!
-
-        Don't forget: after classifying an image you can always discuss it with professional and citizen scientists or share it with friends.
-
-        Click "Finish" now to move on.
-      '''
-
-    splits:
-      social: 'Good job! You and ### other Zooniverse volunteers have contributed to Snapshot Serengeti.'
-      task: 'Good job! The image you successfully classified was taken by one of over 200 motion triggered cameras set-up around Serengeti National Park.'
-      science: 'Good job! Our science team needs your classifications to understand how different animals coexist in the Serengeti.'
 
   differences:
     bearBlack:

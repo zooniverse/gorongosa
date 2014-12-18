@@ -19,6 +19,6 @@ class Animal extends Model
 
   @isDeer: (name) -> name.toLowerCase() is 'deer'
 
-  @deerAttributes: ['fawns', 'antlerless', 'antlered']
+  @deerAttributes: ['fawns', 'antlerless', 'antlered', 'notVisible']
 
 module.exports = Animal
