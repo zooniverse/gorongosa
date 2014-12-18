@@ -10,7 +10,7 @@ values = [
   'buildStocky','buildTall','buildLanky','buildSmall','buildLowSlung'
 ]
  
-characteristics = ['like', 'coat','tail', 'build']
+characteristics = ['like', 'coat', 'tail', 'build']
 
 animalCharacteristics = [
   {amphibiansAndReptiles:		[0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,1,1,0,0,0,1,1]}
