@@ -85,7 +85,7 @@ class SubjectViewer extends Controller
     @extraMessageContainer.hide() unless message
 
     @el.addClass 'finished'
-    # @classification.send() unless @classification.subject.metadata.empty
+    @classification.send() unless @classification.subject.metadata.empty
     console?.log(@classification)
 
   onClickNext: ->
