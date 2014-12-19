@@ -4,7 +4,7 @@ Api = require 'zooniverse/lib/api'
 
 REFRESH_INTERVAL = 1000 * 60 * 5
 
-isDev = if !!~location.host.indexOf 'demo' or +location.port > 1000 then true else false
+isDev = if !!~location.host.indexOf('demo') or +location.port > 1000 then true else false
 
 class HomePage extends Controller
   className: 'home-page'
@@ -13,7 +13,7 @@ class HomePage extends Controller
   elements:
     '#user-count': 'userCount'
     '#classification-count': 'classificationCount'
-    '#totalImages': 'totalImages'
+    '#total-images': 'totalImages'
     '#percent-complete': 'percentComplete'
   
   constructor: ->
@@ -37,9 +37,13 @@ class HomePage extends Controller
       total = subjectStatus.reduce (pv, cv, i, arr) ->
         pv + cv.count
       , 0
-      complete = subjectStatus[1].count # eh
+
+      complete = 0
+      for status in subjectStatus
+        continue unless status is 'complete'
+        complete = status.count
 
       @totalImages.html formatNumber total
-      @percentComplete.html "#{ (complete / total) * 100 }%"
+      @percentComplete.html "#{ Math.ceil(complete / total) * 100 }%"
 
 module.exports = HomePage
