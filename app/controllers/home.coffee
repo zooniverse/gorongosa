@@ -4,7 +4,7 @@ Api = require 'zooniverse/lib/api'
 
 REFRESH_INTERVAL = 1000 * 60 * 5
 
-isDev = if ~!!location.host.indexOf 'demo' or +location.port > 1000 then true else false
+isDev = if !!~location.host.indexOf 'demo' or +location.port > 1000 then true else false
 
 class HomePage extends Controller
   className: 'home-page'
