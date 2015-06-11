@@ -1,0 +1,6 @@
+<div class="item">
+  <a href="<%= @subjects[0]?.talkHref() || '#/SUBJECT_ERROR' %>">
+    <% location = @subjects[0]?.location %>
+    <img src="<%= location?.standard || '' %>" />
+  </a>
+</div>

@@ -8,17 +8,7 @@
   <div class="secondary-content">
     <div class="left-column">
       <div class="content">
-        <h2>Citizen science in the classroom</h2>
-        <p>Snapshot Wisconsin is a great opportunity to integrate science and technology in the classroom and a unique way for students to learn about wildlife and their habitats. In addition to participating online, teachers in Wisconsin can also host a camera in their school forest or other property. For more information see dnr.wi.gov, keyword Snapshot Wisconsin. </p>
-
-        <p><a href="http://www.zooteach.org/">ZooTeach</a> is a companion website to Zooniverse where educators can find and share educational resources relating to Snapshot Wisconsin and the other Zooniverse citizen science projects. Snapshot Wisconsin is a recent addition to Zooniverse, so if you have any ideas for how to use the project in the classroom, please share your lesson ideas or resources on ZooTeach.</p>
-
-        <p>There are a number of excellent wildlife education resources available online. A few of our favorites are below:</p>
-
-        <ul>
-          <li><a href="http://dnr.wi.gov/eek/">http://dnr.wi.gov/eek/</a> - Environmental Education for Kids! (EEK!) is an electronic magazine for kids in grades 4-8 published by the Wisconsin Department of Natural Resources. It includes information on Wisconsin’s wildlife and resources for educators on how to help students use EEK!</li>
-          <li><a href="http://projectwild.org/">http://projectwild.org/</a> - Project WILD is a nationwide program that provides resources for educators in teaching about wildlife and their habitat. The materials are available through Project WILD workshops lead by certified instructors. The Project WILD handbook includes more than 165 hands-on activities for PreK-12.</li>
-        </ul>
+        <%- 'div', 'education.inTheClassroom' %>
       </div>
     </div>
 

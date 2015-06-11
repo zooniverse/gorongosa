@@ -9,8 +9,6 @@ AnimalSelector = require './animal_selector'
 animals = require '../lib/animals'
 characteristics = require '../lib/characteristics'
 AnimalMenuItem = require './animal_menu_item'
-{Tutorial} = require 'zootorial'
-tutorialSteps = require '../lib/tutorial_steps'
 getTutorialSubject = require '../lib/get_tutorial_subject'
 getEmptySubject = require '../lib/get_empty_subject'
 Notifier = require '../lib/notifier'
@@ -90,7 +88,10 @@ class Classifier extends Controller
     subject = getEmptySubject()
     subject.select()
 
-  onUserChange: =>
+  onUserChange: (e, user) =>
+    @animalSelector.firstVisit = true unless user?.classification_count
+    @animalSelector.handleFirstVisit() if @el.hasClass 'active'
+
     Subject.next()
 
 module.exports = Classifier

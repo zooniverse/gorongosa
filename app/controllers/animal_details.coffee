@@ -60,7 +60,7 @@ class AnimalDetails extends Controller
       count = @getCount()
 
       deerValues = @deerValues()
-      deer = deerValues.length is 4 and deerValues.reduce (t, v) -> t + v
+      deer = deerValues.length > 0 and deerValues.reduce (t, v) -> t + v
 
       @identifyButton.attr disabled: (not count) and (not deer)
 

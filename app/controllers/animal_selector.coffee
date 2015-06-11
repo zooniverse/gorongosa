@@ -3,7 +3,6 @@ template = require '../views/animal_selector'
 FilterMenu = require './filter_menu'
 columnize = require '../lib/columnize'
 AnimalDetails = require './animal_details'
-getTutorialSubject = require '../lib/get_tutorial_subject'
 getPhysicallyAdjacentSibling = require '../lib/get_physically_adjacent_sibling'
 SlideTutorial = require 'slide-tutorial'
 slides = require '../lib/tutorial_slides'
@@ -20,7 +19,6 @@ class AnimalSelector extends Controller
     'click [data-animal]': 'onAnimalItemClick'
     'click button[name="clear-filters"]': 'onClickClearFilters'
     'click button[name="start-tutorial"]': 'onClickStartTutorial'
-    'click button[name="dark-mode"]': 'onClickDarkMode'
 
   elements:
     'input[name="search"]': 'searchInput'
@@ -145,13 +143,15 @@ class AnimalSelector extends Controller
   onClickClearFilters: ->
     @clearFilters()
 
-  onClickDarkMode: ->
-    $('body').toggleClass('dark-mode')
-
   clearFilters: =>
     @set.filter {}, true
     @searchInput.val ''
     @searchInput.trigger 'keydown'
+
+  handleFirstVisit: ->
+    if @firstVisit
+      @slideTutorial.start()
+      @firstVisit = false
 
   onClickStartTutorial: ->
     @slideTutorial.start()

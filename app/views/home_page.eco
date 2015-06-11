@@ -1,4 +1,4 @@
-<% translate = require 't7e' %>
+<% t = require 't7e' %>
 
 <div class="recents">
   <div class="image-changer"></div>
@@ -8,8 +8,8 @@
   <div class="home-section left">
     <div class="content">
       <p>Welcome to</p>
-      <h1>Snapshot</h1>
-      <h1>Wisconsin</h1>
+      <h1>Wildlife</h1>
+      <h1>Watch</h1>
     </div>
   </div>
 </section>
@@ -17,10 +17,10 @@
 <section>
   <div class="home-section right">
     <div class="content">
-      <h2>What is Snapshot Wisconsin?</h2>
-      <p>Snapshot Wisconsin is a partnership with citizens and educators to monitor wildlife year-round with a network of trail cameras across Wisconsin. Help us to identify the animals captured on camera and better understand the distribution and trends of our wildlife populations.</p>
+      <%- t 'h2', 'home.rightBannerHeader' %>
+      <%- t 'p', 'home.tagline' %>
       <p class="action">
-        <%- translate 'a', 'home.action', href: '#/classify' %>
+        <%- t 'a', 'home.action', href: '#/classify' %>
       </p>
     </div>
   </div>
@@ -29,37 +29,26 @@
 <section>
   <div class="project-stats">
     <div class="content">
-      <%- translate 'h1', 'home.stats.header' %>
+      <%- t 'h1', 'home.stats.header' %>
       <div class="quarter">
         <h2 id="user-count">-</h2>
-        <%- translate 'p', 'home.stats.activeUsers' %>
+        <%- t 'p', 'home.stats.activeUsers' %>
       </div>
 
       <div class="quarter">
         <h2 id="classification-count">-</h2>
-        <%- translate 'p', 'home.stats.crittersIdentified' %>
+        <%- t 'p', 'home.stats.crittersIdentified' %>
       </div>
 
       <div class="quarter">
         <h2 id="total-images">-</h2>
-        <%- translate 'p', 'home.stats.totalImages' %>
+        <%- t 'p', 'home.stats.totalImages' %>
       </div>
 
       <div class="quarter">
         <h2 id="percent-complete">-</h2>
-        <%- translate 'p', 'home.stats.complete' %>
+        <%- t 'p', 'home.stats.complete' %>
       </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="home-pre-footer">
-    <div class="content">
-      <a href="http://www.nasa.gov">
-        <img src="./images/logos/nasa.gif" alt="NASA"/>
-      </a>
-      <%- translate 'p', 'home.nasa' %>
     </div>
   </div>
 </section>

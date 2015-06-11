@@ -1,6 +1,6 @@
 <% t = require 't7e' %>
 
-<div class="site-navigation-item"><a href="#/" class="logo"><img src="./images/logos/site.png" width="150"></a></div>
+<div class="site-navigation-item"><a href="#/" class="logo"><img src="./images/logos/site.png"></a></div>
 <div class="site-navigation-item"><%- t 'a', 'navigation.classify', href: '#/classify' %></div>
 <div class="site-navigation-item"><%- t 'a', 'navigation.science', href: '#/science' %></div>
 <div class="site-navigation-item"><%- t 'a', 'navigation.education', href: '#/education' %></div>

@@ -10,14 +10,15 @@ module.exports =
     blog: 'Blog'
 
   home:
-    heading: 'Welcome to Snapshot Wisconsin'
-    rightBannerHeader: "What is Snapshot Wisconsin?"
+    heading: 'Welcome to Wildlife Watch'
+    rightBannerHeader: "What is Wildlife Watch?"
+    tagline: 'WildlifeWatch is an effort to monitor forest wildlife year-round across a network of trail cameras. Help us to identify the animals captured on camera and better understand the distribution and trends of our wildlife populations.'
     action: 'Get Started'
     nasa: 'In partnership with NASA'
     currentStatus: '<span class="classification-count">0</span> classifications by <span class="user-count">0</span> volunteers'
 
     stats:
-      header: "SNAPSHOT WISCONSIN Statistics"
+      header: "WILDLIFE WATCH Statistics"
       activeUsers: "Active Users"
       crittersIdentified: "Critters Identified"
       totalImages: "Images Total"
@@ -26,7 +27,7 @@ module.exports =
   siteIntro:
     s1:
       title: "Welcome!"
-      content: "Welcome to Snapshot Wisconsin! In this project, we are asking you to identify animals found in camera trap photos from around Wisconsin. Your help allows us better understand how animal populations across the state change through time."
+      content: "Welcome to Wildlife Watch! In this project, we are asking you to identify animals found in camera trap photos from around Wisconsin. Your help allows us better understand how animal populations across the state change through time."
     s2:
       title: "Identifying animals"
       content: "You are presented with a photo on the left and a list of potential animals on the right. When you spot an animal within a photo, simply click the corresponding animal on the right. You will be asked to supply some followup info, such as the number of animals found in the image."
@@ -38,7 +39,7 @@ module.exports =
       content: "If you need to delete any of your existing marks while viewing an image, simply find your animal in the list below the image and click the 'X' icon. Don’t worry if you’re unsure about your choices, though—even a guess is more helpful than nothing!"
     s5:
       title: "That's it!"
-      content: "That's it! You may catch up on project updates through speaking with other volunteers via Talk."
+      content: "You may catch up on project updates through speaking with other volunteers via Talk."
 
   classify:
     deleteAnnotation: 'Delete'
@@ -56,13 +57,11 @@ module.exports =
     discuss: 'Discuss'
     next: 'Next capture'
     search: 'Search'
-
     nothingToShow: 'There\'s nothing to show with these filters.'
     clearFilters: 'Clear filters'
-
     oftenConfused: 'Often confused with:'
-
     count: 'How many'
+    startTutorial: 'Start tutorial'
 
     deer:
       fawns: "Fawns"
@@ -112,7 +111,7 @@ module.exports =
       description: 'Feral or stray cats are small in size compared to wild cat species. Look for unique coloration or patterns not found in the wild.'
     chipmunksAndSquirrels:
       label: 'Chipmunks and Squirrels'
-      description: 'Because these animals are so small, they will becaptured infrequently by the camera. Common species in this category include the gray squirrel, red squirrel, 13-lined ground squirrel, eastern or least chipmunks, and flying squirrels. If you spot any of these, mark them here.'
+      description: 'Because these animals are so small, they will be captured infrequently by the camera. Common species in this category include the gray squirrel, red squirrel, 13-lined ground squirrel, eastern or least chipmunks, and flying squirrels. If you spot any of these, mark them here.'
     cottontailEastern:
       label: 'Cottontail, Eastern'
       description: 'The fur of this small rabbit is brown in color with longer gray and black guard hairs, giving it a grizzled appearance. Their ears are typically shorter than the hind feet and are small in proportion to the body.'
@@ -174,7 +173,7 @@ module.exports =
       label: 'Muskrat'
       description: 'The body of a muskrat is stout with dark brown fur. Muskrats have short rounded ears, barely protruding above the fur, and a rounded, scaly tail. They are typically found near water.'
     opossumVirginia:
-      label: 'Opposum, Virginia'
+      label: 'Opossum, Virginia'
       description: 'Opossums have short legs and a thick body. They are typically grizzled gray in color with a white head. The tail is scaly and is black at the base with a white tip. Their large ears are mostly furless.'
     otherDomestic:
       label: 'Other Domestic'
@@ -187,7 +186,7 @@ module.exports =
       description: 'This bird has a long pointed tail and short rounded wings. Males appear iridescent bronze with a green and black head. Males also have fleshy eye patches and a white neck ring. Overall females are a buff color and are more dull than males.'
     pigFeral:
       label: 'Pig, Feral'
-      description: 'Feral pigs or wild hogs are stocky animals and can vary greatly in size and color. Compared to domestic swine, they have longer snouts, longer course hair, a straight tail, and may have tusks. This exotic species is not common in Wisconsin.'
+      description: 'Feral pigs or wild hogs are stocky animals and can vary greatly in size and color. Compared to domestic swine, they have longer snouts, longer coarse hair, a straight tail, and may have tusks. This exotic species is not common in Wisconsin.'
     porcupineNorthAmerican:
       label: 'Porcupine'
       description: 'The body of a porcupine is stout and covered in quills, which are partially concealed by long guard hairs. Porcupines appear dark brown in color.'
@@ -240,7 +239,7 @@ module.exports =
     tailShort: 'Short'
     buildStocky: 'Stocky'
     buildLanky: 'Lanky'
-    buildTall: 'buildTall'
+    buildTall: 'Tall'
     buildSmall: 'Small'
     buildLowSlung: 'Low Slung'
 
@@ -253,37 +252,31 @@ module.exports =
     showing: 'Showing'
     loadMore: 'Load more'
 
-  about:
-    info:
-      nav: "Info"
-      header: "What is Snapshot Wisconsin?"
-      p: """
-        Nunc lacinia, felis ut rutrum facilisis, mi ante commodo libero, a volutpat nisl dolor blandit sapien. Pellentesque iaculis dignissim venenatis. Vivamus felis massa, convallis eget quam id, mollis posuere lorem. Aenean lacinia vel ante vulputate fringilla. Curabitur sed faucibus sapien. Duis at augue lectus. Vivamus aliquet, ipsum placerat volutpat bibendum, dui sapien convallis mi, convallis cursus tortor sapien sit amet eros. Quisque ultricies lectus nulla, in iaculis lacus tempus sit amet.
-      """
-    about:
-      nav: "About"
-      header: "About"
-      p: """
-        Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species.
-        However, with proper management, urban areas can house a number of important wildlife species, including carnivores and small mammals.
-        <br><br>
-        To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks,
-        forest preserves, golf courses and cemeteries across a four-county area, including downtown Chicago and its suburbs. Motion-triggered cameras are deployed four
-        times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
-        <br><br>
-        Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and
-        ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
-      """
-    organizations:
-      nav: "Organizations"
-      header: "Organizations"
-      adler:
-        header: "Adler Planetarium"
-        p: """
-          The Adler Planetarium - America's First Planetarium - was founded in 1930 by Chicago business leader Max Adler.
-          The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math.
-          Throughout 80 years, the Adler has inspired the next generation of explorers by sharing the personal stories of space exploration and America’s space heroes.
-        """
+  science:
+    understandingPopulations: '''
+      <h2>Understanding wildlife populations</h2>
+      <p>Forests are home to dozens of native mammals, hundreds of other vertebrate species, and thousands of invertebrates and native plant species, living together in diverse natural communities. WildlifeWatch is a collaborative effort to utilize camera traps, also known as trail cameras, to learn about the distribution and trends of our wildlife populations.</p>
+    '''
+
+    whyWeNeedYou: '''
+      <h2>Why we need you</h2>
+      <p>Over the course of a month, a single camera might take thousands of photographs. You help to make all these photographs meaningful by classifying the type and number of animals in the image. Because we know where and when these photographs were taken, we can create maps for both common and rare species across the state and visualize how animal populations change through time. From black bears to badgers, see what critters you can spot roaming the Wisconsin forests! Share your favorites and join the discussion about what you are observing along the way. We will share with you what we are learning back here at Zooniverse.</p>
+    '''
+
+  education:
+    inTheClassroom: '''
+      <h2>Citizen science in the classroom</h2>
+      <p>Wildlife Watch is a great opportunity to integrate science and technology in the classroom and a unique way for students to learn about wildlife and their habitats.</p>
+
+      <p><a href="http://www.zooteach.org">ZooTeach</a> is a companion website to Zooniverse where educators can find and share educational resources relating to WildlifeWatch and the other Zooniverse citizen science projects. WildlifeWatch is a recent addition to Zooniverse, so if you have any ideas for how to use the project in the classroom, please share your lesson ideas or resources on ZooTeach.</p>
+
+      <p>There are a number of excellent wildlife education resources available online. A few of our favorites are below:</p>
+
+      <ul>
+        <li><a href="http://dnr.wi.gov/eek/">http://dnr.wi.gov/eek/</a> - Environmental Education for Kids! (EEK!) is an electronic magazine for kids in grades 4-8 published by the Wisconsin Department of Natural Resources. It includes information on Wisconsin’s wildlife and resources for educators on how to help students use EEK!</li>
+        <li><a href="http://projectwild.org/">http://projectwild.org/</a> - Project WILD is a nationwide program that provides resources for educators in teaching about wildlife and their habitat. The materials are available through Project WILD workshops lead by certified instructors. The Project WILD handbook includes more than 165 hands-on activities for PreK-12.</li>
+      </ul>
+    '''
 
   team:
     navigation:
@@ -296,20 +289,15 @@ module.exports =
       zuckerberg: 'Dr. Benjamin Zuckerberg is an assistant professor in the Department of Forest and Wildlife Ecology at the University of Wisconsin-Madison. His research focuses on how climate change and habitat loss impacts wildlife populations. He is a strong advocate for the role of the public in collecting biological data. Using the data from these “citizen science” programs, Ben has studied shifts in bird ranges and migration in response to a changing climate.'
       deelen: 'Tim Van Deelen has been on the faculty at the UW-Madison since 2004. Tim’s research specializes in the applied management of wildlife with an emphasis on large mammals in Wisconsin and is a frequent collaborator with the Wisconsin DNR and the Apostle Islands National Lakeshore. Prior positions include working as the research specialist for deer in the Wisconsin Department of Natural Resources and as a Research Scientist for the Illinois Natural History Survey where he had a joint appointment with the University of Illinois at Urbana-Champaign.'
       singh: 'Aditya Singh is a post-doctoral scientist with the Department of Forest and Wildlife Ecology at the University of Wisconsin-Madison. He uses a combination of airborne and remotely sensed data to study the impacts of environmental change and disturbance on landscape-scale indicators of ecosystem health.'
-      stenglein: 'Dr. Jennifer Stenglein is a quantitative wildlife research scientist with the Wisconsin Department of Natural Resources where she works on trail camera monitoring of Wisconsin’s wildlife. She is interested in getting students and the public involved in wildlife monitoring and using those data to understand spatial patterns and temporal trends in wildlife populations.'
       martin: 'Karl Martin is the State Director for the Community, Natural Resource and Economic Development Program and an Assistant Dean with the University of Wisconsin Cooperative Extension. He is an adjunct Associate Professor at the University of Wisconsin-Madison’s Forest and Wildlife Ecology Department and recently served as the Wildlife and Forestry Research Section Chief at the Wisconsin Department of Natural Resources. Karl received his Bachelors degree in Wildlife Ecology at UW-Madison and his Masters and Doctorate degrees at Oregon State University. Karl’s research has focused on interaction of forest management and multi-scale wildlife habitat relationships. His current position focuses on the ‘Wisconsin Idea’ of taking the information and resources of the University to communities and citizens of the state.'
-      anhalt: 'Christine Anhalt is a research scientist with the Wisconsin Department of Natural Resources where she assists with coordinating the Snapshot Wisconsin project. She completed a Master’s degree in conservation biology at University of Wisconsin-Madison. Christine’s research has focused on human-wildlife interactions.'
 
     organizations:
-      wdnr: 'Members of the Snapshot Wisconsin team are scientists at the Wisconsin Department of Natural Resources (WDNR). The WDNR provided funding for the purchase of trail cameras and provides ongoing support for the project. The WDNR, in partnership with individuals and organizations, manages “fish, wildlife, forests, parks, air and water resources while promoting a healthy, sustainable environment and a full range of outdoor opportunities.”'
-      uwm: 'Members of the Snapshot Wisconsin team are ecologists at the University of Wisconsin Madison in the Department of Forest and Wildlife Ecology. UW-Madison is a public, land-grant institution founded in 1848 whose mission is to provide “a learning environment in which faculty, staff and students can discover, examine critically, preserve and transmit the knowledge, wisdom and values that will help insure the survival of this and future generations and improve the quality of life for all.”'
+      uwm: 'Members of the Wildlife Watch team are ecologists at the University of Wisconsin Madison in the Department of Forest and Wildlife Ecology. UW-Madison is a public, land-grant institution founded in 1848 whose mission is to provide “a learning environment in which faculty, staff and students can discover, examine critically, preserve and transmit the knowledge, wisdom and values that will help insure the survival of this and future generations and improve the quality of life for all.”'
       nasa: 'NASA provided partial funding for the first year of the project thought the Ecological Forecasting for Conservation and Natural Resource Management Program. The NASA Applied Sciences Program supports projects that enable uses of Earth observations in organizations’ policy, business, and management decisions.'
       wcbmn: 'The Wisconsin Citizen-based Monitoring (WCBM) Network provided funding for materials used in training citizen volunteers during the first year of the project. The WCBM Network is a stakeholder collaboration “to improve the efficiency and effectiveness of monitoring efforts by providing coordination, communications, technical, and financial resources and recognition to members of the Wisconsin citizen-based monitoring community.”'
       adler: 'The Adler Planetarium was founded in 1930 by Chicago business leader Max Adler. A recognized leader in public learning, the Adler inspires young people -particularly women and minorities - to pursue careers in science, technology, engineering, and math. Scientists, historians and educators at the museum inspire the next generation of explorers.'
+      uwExtension: 'The University of Wisconsin Extension provides ongoing support for the project. The Extension’s purpose is to "connect people with the University of Wisconsin and engage with them in transforming lives and communities."'
 
   connect:
-    header: "Connect"
-    action: "Get Started"
-    social: """
-      Follow the <a href= '#/'>Snapshot Chicago Blog</a> and <a href='#/'>@Snapshot_Chicago</a> to keep current with the latest findings
-    """
+    header: 'Connect'
+    action: 'Get Started'

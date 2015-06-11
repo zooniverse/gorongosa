@@ -88,12 +88,14 @@
     <% end %>
   </div>
 
-  <div class="babies group">
-    <label title="[Y]">
-      <input type="checkbox" name="babies" data-shortcut="Y" />
-      <span class="label"><%- translate 'span', 'classify.babies' %></span>
-    </label>
-  </div>
+  <% if !Animal.isDeer(animalName): %>
+    <div class="babies group">
+      <label title="[Y]">
+        <input type="checkbox" name="babies" data-shortcut="Y" />
+        <span class="label"><%- translate 'span', 'classify.babies' %></span>
+      </label>
+    </div>
+  <% end %>
 </div>
 
 <div class="action">
