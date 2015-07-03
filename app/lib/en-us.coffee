@@ -88,132 +88,174 @@ module.exports =
       amphibiansAndReptiles: 'Really hard to confuse these two, but somehow people manage it.'
 
   animals:
-    amphibiansAndReptiles:
-      label: 'Amphibians and Reptiles'
-      description: 'Because these animals are so small, they will be captured infrequently by the camera. Amphibians and reptiles include many species of frogs, snakes, lizards, turtles, and salamanders. If you spot any of these, mark them here.'
-    badgerAmerican:
-      label: 'Badger, American'
-      description: 'Badgers have low, wide bodies with short legs. The fur of a badger ranges from grayish to reddish along the back with a buff colored underside. Badgers have distinctive black patches on their face and a white stripe extending from nose, down the back.'
-    bearBlack:
-      label: 'Bear, Black'
-      description: 'Black bears are large and heavily built.  They are usually black in color with a brown muzzle. Other uncommon color variations include brown or cinnamon. They have a short tail and prominent, round ears.'
-    beaverAmerican:
-      label: 'Beaver, American'
-      description: 'Beavers have glossy fur that can appear reddish brown to blackish brown. They have a distinctive scaly paddle-shape tail. They have short, round ears and are typically found near water.'
-    birds:
-      label: 'Bird'
-      description: 'If you see a bird that doesn’t already have its own category, you can mark it here.'
-    bobcat:
-      label: 'Bobcat'
-      description: 'The coat of this cat varies from gray to reddish brown, typically with spots, especially on the belly. The bobcat has short tuffs on its ears. They have short tails that, on the tip, are black above with white below.'
-    catDomestic:
-      label: 'Cat, Domestic'
-      description: 'Feral or stray cats are small in size compared to wild cat species. Look for unique coloration or patterns not found in the wild.'
-    chipmunksAndSquirrels:
-      label: 'Chipmunks and Squirrels'
-      description: 'Because these animals are so small, they will be captured infrequently by the camera. Common species in this category include the gray squirrel, red squirrel, 13-lined ground squirrel, eastern or least chipmunks, and flying squirrels. If you spot any of these, mark them here.'
-    cottontailEastern:
-      label: 'Cottontail, Eastern'
-      description: 'The fur of this small rabbit is brown in color with longer gray and black guard hairs, giving it a grizzled appearance. Their ears are typically shorter than the hind feet and are small in proportion to the body.'
-    cougar:
-      label: 'Cougar'
-      description: 'The coat of this large slender cat varies from yellowish brown to grayish brown with a lighter color belly and throat. Their head is relatively small and the area behind the ears is black. Cougars have a long black-tipped tail. Although there are no known breeding populations of cougar in Wisconsin, there have been several verified sightings in recent years.'
-    coyote:
-      label: 'Coyote'
-      description: 'Coyotes have a distinctive pointed muzzle and pointed ears, which are large in proportion to the head.'
-    craneSandhill:
-      label: 'Crane, Sandhill'
-      description: 'This tall bird is gray to brown. It has a bright red patch on the crest of the head and long black legs. Young are gray with scattered reddish brown feathers.'
-    craneWhooping:
-      label: 'Crane, Whooping'
-      description: 'This tall bird is white in color with red facial skin and long black legs. Young are reddish brown with scattered white feathers.'
-    deerWhiteTailed:
-      label: 'Deer'
-      description: 'Lightly built, whitetail deer are grayish brown to reddish brown in color. The underside of their short tail is white. Males have antlers which fork off a main branch and the young are reddish brown in color with white spots. <b>Please select an answer in all four categories below!</b>'
-    dogDomestic:
-      label: 'Dog, Domestic'
-      description: 'Domestic dogs come in all shapes and sizes. Look for unique coloration or patterns not found in the wild. Also look for signs of humans (including a collar or leash) to differentiate domestic dogs from their wild canid counterparts.'
-    elk:
-      label: 'Elk'
-      description: 'Elk have a large, thick body with long slender legs. They have a dark brown head and neck, lighter body, and a cream colored rump. Males have antlers which fork off a main branch and a dark shaggy mane that hangs from the neck to the chest. The young have white spots.'
-    fisher:
-      label: 'Fisher'
-      description: 'Fishers are medium in size and have dark brown bodies with long bushy tail. The head, neck, and shoulders can be a grizzled yellowish brown. Fishers may also have a cream colored patch on the chin or chest.'
-    foxGray:
-      label: 'Fox, Gray'
-      description: 'These medium-size mammals have distinctive coloration. Their upper side is grizzled gray and cinnamon with a buff colored neck and underside. The long tail has a black stripe on the upper side and a black tip.'
-    foxRed:
-      label: 'Fox, Red'
-      description: 'These medium-size mammals vary in color from yellowish red to reddish brown on the upper side with a white underside and nearly black legs. Red foxes have a bushy tail with a white tip. Other color variations include cross foxes (grizzled gray down back and across shoulders) and silver foxes (entire body silver to nearly black).'
-    grouse:
-      label: 'Grouse'
-      description: 'Wisconsin is home to both spruce grouse and ruffed grouse. Both can appear red or gray in color. Ruffed grouse have a small crest on the top of the head with a black ruff on the sides of the neck. Male spruce grouse have a dark throat and breast.'
-    hareSnowshoe:
-      label: 'Hare, Snowshoe'
-      description: "Hares' coloration varies with season. In the summer, hares have dark brown to reddish brown fur, and in the winter, the fur is white. Their coat is more homogenous than a cottontail rabbit. Hares have long feet and ears are large in proportion to the body."
+    aardvark:
+      label:'Aardvark'
+      description:'Short, stocky animal with a long snout and a flat, piglike nose. The aardvark has brown to pink skin with thin, bristly hair, long ears, clawed toes, and a long, smooth tail. '
+    baboon:
+      label:'Baboon'
+      description:'Medium-sized primate with golden fur that is paler on the underbelly and a dark face that protrudes and widens at the nose and mouth. It has a straight brow, brown eyes, and a tail that juts out and drops.'
+    birdOther:
+      label:'Bird (other)'
+      description:'There are about 400 bird species in Gorongosa, from small songbirds to large geese and ducks. If you find a bird that is not on the list, mark it here!'
+    buffalo:
+      label:'Buffalo'
+      description:'Large, cattlelike animal with short legs and a long, tufted tail, dark brown to black fur, large, droopy ears, and a broad muzzle. Both sexes have U-shaped horns, but males horns form a fused shield on the top of their heads. '
+    bushbaby:
+      label:'Bushbaby'
+      description:'Very small primate covered in gray fur that is darker around the eyes and lighter on the face and underbelly. It has huge brown eyes, large, round ears, and a mouselike nose. Its paws are bare and it has long, thin fingers.'
+    bushbuck:
+      label:'Bushbuck'
+      description:'Medium-sized antelope with tan to chestnut brown fur with thin white stripes and spots on their flanks. Males are shaggy with darker fur and thick, spiral horns. Females are light tan and slender.'
+    bushpig:
+      label:'Bushpig'
+      description:'Squat, flat-nosed, and piglike with long ears and reddish-brown fur with silver running down the spine. Both sexes have short, inconspicuous tusks. '
+    caracal:
+      label:'Caracal'
+      description:'Medium to large muscular cat with red-brown fur, a lighter underbelly, distinctive large, pointy ears with tufts of black fur at the tips, and white and black striped markings on the face.'
+    civet:
+      label:'Civet'
+      description:'Long, stocky mammal with short legs and a pointy face. Fur is light brown-gray with a dark mask, white at the tip of the muzzle, dark legs, spots, and bands along the neck. '
+    crane:
+      label:'Crane'
+      description:'Long-legged, long-necked bird with a straight beak. There are two crane species in Gorongosa: the gray-crowned crane and the wattled crane. The gray-crowned crane has gray, white, and yellow feathers with a distinctive yellow fan of feathers on its head. The wattled crane has gray, black, and white feathers with red skin around its yellow beak.'
+    duiker:
+      label:'Duiker'
+      description:'Duikers are small, deerlike antelope with a thin, short tail and colors ranging from blue-gray to red depending on the species. Males have short, straight horns. There are three species of duiker in Gorongosa: red, common, and blue duiker.'
+    eland:
+      label:'Eland'
+      description:'Massive antelope with an oxlike body and short legs. Both sexes have straight, spiraled horns, a short mane, and a smooth light tan to gray coat with thin white stripes on the sides. Males have a large dewlap under the throat.'
+    elephant:
+      label:'Elephant'
+      description:'Huge, leathery, gray-skinned mammal with large, floppy ears and thick, strong legs. It has a short, tufted tail and a long, thick trunk. Some elephants of both sexes have large, white tusks, but some individuals are born without tusks or have only one tusk. '
+    elephantShrew:
+      label:'Elephant Shrew'
+      description:'Tiny brown-furred rodent with a very long, thin snout and a long, thin, hairless tail. It has large ears and large, black eyes that are ringed with white. '
+    genet:
+      label:'Genet'
+      description:'Small, slender animal with tan-gray fur, large, ringed spots, a long, thick, black-ringed tail, and a white underbelly. It has a black stripe down the spine and a pointy muzzle. '
+    groundHornbill:
+      label:'Ground Hornbill'
+      description:'Large, stocky black bird with a red face, long, black beak, and red flaps of skin on its throat.'
+    grysbok:
+      label:'Grysbok'
+      description:'Small, stocky antelope with coarse, tan to gray fur and large black eyes. Its large ears have a dark labyrinth pattern on the inside. Males have short, straight horns.'
+    hare:
+      label:'Hare'
+      description:'Large rabbitlike animal with very long ears. There are two hare species in Gorongosa. The savanna hare has gray fur with a lighter brown underbelly, while the scrub hare is darker gray and has a white underbelly.'
+    hartebeest:
+      label:'Hartebeest'
+      description:'Large, reddish-yellow antelope with an elongated, horselike face, large, pointy ears, humped shoulders, sloped back, and a light underbelly and hind parts with a short, tufted tail. Both sexes have curved, ridged horns.'
+    hippopotamus:
+      label:'Hippopotamus'
+      description:'Massive and low to the ground with short legs, small ears, gray to pink skin, a wide muzzle, and a short tail with a bristly tassel.'
+    honeyBadger:
+      label:'Honey Badger'
+      description:'Small, stocky mammal with short legs and a wide body. The lower half of the body is covered in black fur, and the head, back, and the top of the tail are covered in solid white-gray fur. '
     human:
-      label: 'Human'
-      description: 'Occasionally you may see humans or their vehicles (including cars, bikes, or ATV) using the same areas as wildlife.'
-    jackrabbitWhiteTailed:
-      label: 'Jackrabbit, White Tailed'
-      description: "Jackrabbits' coloration varies with season. The upper side is grayish brown in color with gray or white on the underside, and in the winter, the fur is white. The tail is white year-round. Jackrabbits have ears which are longer then the head. Observation of this species in Wisconsin is rare."
-    lynxCanada:
-      label: 'Lynx'
-      description: 'The coat of this cat varies from gray to grayish brown with spots on the legs and belly. The lynx has long black tuffs on the ears. They have short tails that are tipped black. In comparison to a bobcat, lynx have very large furry feet and long legs. Lynx are very uncommon in Wisconsin, although rare sightings of visitors from Canada do occur.'
-    martenAmerican:
-      label: 'Marten, American'
-      description: 'This small, long-bodied animal has a bushy tail. The fur of a marten varies from dark brown to tan, usually with a paler head and dark legs. The throat of a marten is whitish cream to orange. The ears of a marten are relatively large and rounded. This is an uncommon species in Wisconsin.'
-    minkAmerican:
-      label: 'Mink, American'
-      description: 'This small long-bodied animal is typically found near water. The fur of a mink is dark brown. Mink may sometimes have white patches on the chin and chest. Compared to a marten, they are more uniformly colored. Their face is flat and pointed.'
-    moose:
-      label: 'Moose'
-      description: 'Moose are one of the largest land mammals in North America. They have a blackish brown body with a long nose. Males have large palmate antlers and the young are reddish brown. This is an uncommon species in Wisconsin.'
-    muskrat:
-      label: 'Muskrat'
-      description: 'The body of a muskrat is stout with dark brown fur. Muskrats have short rounded ears, barely protruding above the fur, and a rounded, scaly tail. They are typically found near water.'
-    opossumVirginia:
-      label: 'Opossum, Virginia'
-      description: 'Opossums have short legs and a thick body. They are typically grizzled gray in color with a white head. The tail is scaly and is black at the base with a white tip. Their large ears are mostly furless.'
-    otherDomestic:
-      label: 'Other Domestic'
-      description: 'Occasionally you may see other domestic animals, such as swine or cattle.'
-    otter:
-      label: 'Otter'
-      description: 'Otters are stocky, medium-sized mammals usually found near water. They have short, dense dark brown fur and are sleek in appearance. Otters have a muscular neck and thick tail which tapers at the tip.'
-    pheasantRingNecked:
-      label: 'Pheasant'
-      description: 'This bird has a long pointed tail and short rounded wings. Males appear iridescent bronze with a green and black head. Males also have fleshy eye patches and a white neck ring. Overall females are a buff color and are more dull than males.'
-    pigFeral:
-      label: 'Pig, Feral'
-      description: 'Feral pigs or wild hogs are stocky animals and can vary greatly in size and color. Compared to domestic swine, they have longer snouts, longer coarse hair, a straight tail, and may have tusks. This exotic species is not common in Wisconsin.'
-    porcupineNorthAmerican:
-      label: 'Porcupine'
-      description: 'The body of a porcupine is stout and covered in quills, which are partially concealed by long guard hairs. Porcupines appear dark brown in color.'
-    raccoonNorthern:
-      label: 'Raccoon'
-      description: 'Raccoons are stocky with slender paws. They vary in color from gray to reddish brown to buff. Raccoons have a distinctive black mask across the eyes and a bushy tail with black rings.'
-    skunkStriped:
-      label: 'Skunk, Striped'
-      description: 'Striped skunks are best distinguished by their coloration. They have a black body with a white striping pattern. Pattern can vary between individuals, but typically striped skunks have a white stripe on the top of their snout and forehead that extends down the back, splitting into a V-shape.'
-    spottedSkunkEastern:
-      label: 'Skunk, Spotted'
-      description: 'This skunk is smaller than a striped skunk. It is black with a white patch on the forehead. Although the pattern varies across individuals, typically there are four to six broken white stripes along the body. Very few historical records of spotted skunks from Wisconsin exist.'
-    turkeyWild:
-      label: 'Turkey'
-      description: 'This large bird appears iridescent bronze in color with alternating dark and light bands on the wing and tail feathers. Their heads are featherless. Males’ heads are red and they have a group of bristles hanging from their chest, called a beard.'
+      label:'Human'
+      description:'Sometimes people are captured in photos too, such as researchers checking the cameras, scouts on patrol, and tourists driving past in their vehicles.'
+    hyena:
+      label:'Hyena'
+      description:'Medium-sized, stocky, doglike animal with a thick neck and a sloped back, golden tan-gray fur with dark spots, and small, round ears. '
+    impala:
+      label:'Impala'
+      description:'Medium-sized antelope with reddish-brown fur, white stripes around the eyes, and black stripes on the forehead and tail. Coat forms horizontal bands of red fur along the back, tan fur along the sides, and white fur on the underbelly. Males have large, spiral horns. '
+    jackal:
+      label:'Jackal'
+      description:'Medium-sized, gray-brown, doglike animal with a pointy face and ears. It has tan legs and underbelly with a black and white striped side, a gray back, and a long, bushy black tail with a white tip.  '
+    kudu:
+      label:'Kudu'
+      description:'Large, lanky antelope with long legs, a short mane along the neck and shoulders, a brownish-gray to tan coat with vertical white stripes along the torso, a white chevron between the eyes, and large round ears. Males have a beard along the throat and massive spiral horns. '
+    leopard:
+      label:'Leopard'
+      description:'Large, muscular cat with short, yellow fur and black, ringed spots, small, round ears, and a long, smooth tail. '
+    lionCub:
+      label:'Lion (cub)'
+      description:'Cubs are smaller than adults with tan-yellow fur and some darker spots, a lighter underbelly, and white fur under the chin. Cubs do not have manes.'
+    lionFemale:
+      label:'Lion (female)'
+      description:'Large, muscular cat with short tan-yellow fur, a long, smooth tail, a lighter underbelly, and white fur under the chin. Females do not have manes.'
+    lionMale:
+      label:'Lion (male)'
+      description:'Large, muscular cat with short tan-yellow fur, a long, smooth tail with a tuft at the end, a lighter underbelly, and white fur under the chin. Males have a thick reddish mane that gets darker and thicker with age.'
+    mammalOther:
+      label:'Mammal (other)'
+      description:'There are over 70 additional species of mammals in Gorongosa that are not on this list, including bats, rats, mice, squirrels, gerbils, shrews, and hyraxes. If you find one of these mammals that is not on the list, mark it here.'
+    mongoose:
+      label:'Mongoose'
+      description:'Small, sleek mammal with short legs, a long body, and a long tail. There are eight mongoose species in Gorongosa that range in size and color from the brown dwarf mongoose to the larger Egyptian mongoose with bushy gray fur and tiny spots.'
+    nyala:
+      label:'Nyala'
+      description:'Medium-sized antelope with long legs and a shaggy tail. Males are dark brown to reddish with thin white stripes and small spots on the rump, orange legs and a white patch of fur between the eyes. Males also have a mane along the neck, chest, and belly as well as long, spiraling horns. Females are tan with vertical white stripes and spots on the sides, large ears, and no horns.'
+    oribi:
+      label:'Oribi'
+      description:'Small, deerlike antelope with a long, slender neck, brownish fur with a white underbelly, white around the eyes and muzzle, and distinctive black spots below the ears. Males have short, straight horns.'
+    palmCivet:
+      label:'Palm civet'
+      description:'Small mammal with a pointy face, short legs, a long body, and a very long tail. Palm civets have brown-gray fur with darker spots and a ringed tail.'
+    pangolin:
+      label:'Pangolin'
+      description:'Small, stocky animal with short legs and a long, thick tail. The pangolin is covered with hard, armored, brown scales. It has a small, pointy face and large claws.'
+    porcupine:
+      label:'Porcupine'
+      description:'Short, stocky animal with brown fur and long, black and white quills covering its back from head to tail. It has a small face with dark eyes and a blunt nose. It is often seen at night.'
+    raptorOther:
+      label:'Raptor (other)'
+      description:'Raptors are predatory birds with large wingspans, sharp, hooked beaks, and huge talons. In addition to vultures, Gorongosa has over 30 species of raptors, including eagles, hawks, kites, falcons, and buzzards. '
+    reedbuck:
+      label:'Reedbuck'
+      description:'Medium-sized, slender antelope with tan to brown fur, a white underbelly, white around the eyes and muzzle, and distinctive dark spots under their large ears. Males have ringed horns that curve forward.'
+    reptile:
+      label:'Reptile'
+      description:'There are over 60 species of reptiles in Gorongosa including crocodiles, snakes, lizards, chameleons, geckos, skinks, tortoises, terrapins, and turtles. This category includes any reptile that you find!'
+    sableAntelope:
+      label:'Sable Antelope'
+      description:'Full-bodied, horselike antelope with a thick neck, mane, long, tufted tail, chestnut brown to black fur with white underbelly and chin, and white under the eyes with a black stripe down the nose. Both sexes have large, ringed horns that curve backward. '
+    samangoMonkey:
+      label:'Samango Monkey'
+      description:'Medium-sized monkey with long, gray, speckled fur. Its face is dark gray, while its arms and legs fade to black toward the hands and feet. It has brown eyes, a white throat and underbelly, and a long, black tail.'
+    secretaryBird:
+      label:'Secretary bird'
+      description:'Large, tall bird with gray feathers on the body and black feathers on the tips of the wings and legs. Its legs are extremely long, and its face is red-orange with a white beak. It has black feathers protruding from the back of its head like a fan.'
+    serval:
+      label:'Serval'
+      description:'Medium-sized cat with long legs, a long neck, a lanky body, yellow-tan fur with black spots, very large ears, a long, striped tail, and black stripes around the neck, nose, and eyes.'
+    steenbok:
+      label:'Steenbok'
+      description:'Small, slender antelope with tan to reddish fur and extremely large ears. It has very large, black eyes with a white ring of fur and black glands around their eyes. Males have short, straight horns.'
+    suni:
+      label:'Suni'
+      description:'Very small antelope with thin legs, a robust body, and reddish-brown to chestnut brown fur that is darker on the back. Their underbelly and inner legs are white, and their eyes are ringed with dark circles. Males have short, straight horns.'
+    vervetMonkey:
+      label:'Vervet Monkey'
+      description:'Small, gray-furred monkey whose face is black and ringed in white fur. Its hands, feet, and ears are also black, and it has a very long, black-tipped tail. '
+    vulture:
+      label:'Vulture'
+      description:'A large raptor with a bald head, large wings, and talons that is often found scavenging on carcasses. Gorongosa has five species of vultures, each with a distinct appearance. The hooded, white-headed, and lappet-faced vultures all have mostly black feathers and pink to blue faces. The white-backed and Egyptian vultures both have lighter gray to white feathers with gray and yellow faces (respectively).'
+    warthog:
+      label:'Warthog'
+      description:'Squat, maned, slate-furred, and piglike with a long, thin, tufted tail. Males have curved tusks at the end of their broad snout, while females have shorter tusks. Both sexes have distinctive warts below their eyes.'
+    waterbuck:
+      label:'Waterbuck'
+      description:'Large antelope with a wide, strong build, brownish-gray fur, a long neck with a shaggy mane, white fur under the neck and on the muzzle, and a white ring around the rump. Males have ringed horns that curve forward.'
     weasel:
-      label: 'Weasel'
-      description: 'Wisconsin is home to least weasels, long-tailed weasels, and short-tailed weasels. These carnivores are small and have long, thin bodies with short legs. In the summer, species are brown to dark brown with a yellowish white underside, and in the winter, they are white. Some species have a black tipped tail.'
-    wolfGray:
-      label: 'Wolf, Gray'
-      description: 'The gray wolf is the largest of wild canid species. Their fur is typically a mix of tan, brown, black, and cinnamon. Other uncommon color variations include both solid black and white. Wolves have a distinctive blocky muzzle with rounded, relatively short ears.'
-    wolverine:
-      label: 'Wolverine'
-      description: 'This is a stocky mammal with short powerful legs. The fur of a wolverine is brown or brownish black with a blond band on the forehead and a blond band extending along the sides. They have a large head with small ears and sharp claws. This species is considered to be extirpated in Wisconsin, with no recent confirmed reports.'
-    woodchuck:
-      label: 'Woodchuck'
-      description: 'This small stocky animal is typically grizzled brown with a dark legs and tail, but can be blackish in color. The top of their head is dark brown and the cheeks cream-brown.'
+      label:'Weasel'
+      description:'The two weasel species in Gorongosa are the zorilla and the African striped weasel. Both are skunklike with black fur, large white stripes along the back, and a fluffy tail. Zorillas are fluffier with three white patches on the face, while African striped weasels are smoother with a black face.'
+    wildDog:
+      label:'Wild Dog'
+      description:'Medium-sized, lanky doglike animal with patchy tan, black, and white fur. It has a long, black muzzle and big, round, mostly black ears.'
+    wildcat:
+      label:'Wildcat'
+      description:'Resembles a domestic tabby cat with brown to gray fur and darker stripes with a long striped tail. '
+    wildebeest:
+      label:'Wildebeest'
+      description:'Large, muscular antelope with a dark muzzle with a mane of hair along the throat and spine, broad shoulders, blue-gray to brown fur with subtle stripes, and a long, tufted tail. Both sexes have large, U-shaped horns.'
+    zebra:
+      label:'Zebra'
+      description:'Horselike animal with short, white fur and distinctive black stripes. The mane is striped and sticks up vertically along the neck. The muzzle, nose, and tufted tail are black.'
+
+
+
 
   characteristics:
     like: 'Looks like...'
@@ -222,26 +264,38 @@ module.exports =
     build: 'Build'
 
   characteristicValues:
-    likeCatDog: 'Cat Dog'
-    likeRodent: 'Rodent'
-    likeOther: 'Other'
-    likeManMade: 'Man Made'
-    coatTanBrown: 'Tan/Brown'
-    coatRed: 'Red'
-    coatWhite: 'White'
-    coatGrayBlack: 'Gray Black'
-    coatSolid: 'Solid'
-    coatBandsOrStripes: 'Bands'
-    coatSpots: 'Spots'
-    tailBushy: 'Bushy'
-    tailSmooth: 'Smooth'
-    tailLong: 'Long'
-    tailShort: 'Short'
-    buildStocky: 'Stocky'
-    buildLanky: 'Lanky'
-    buildTall: 'Tall'
-    buildSmall: 'Small'
-    buildLowSlung: 'Low Slung'
+    likeCatdog: 'cat/dog'
+    likeCowhorse: 'cow/horse'
+    likeAntelopedeer: 'antelope/deer'
+    likePrimate: 'primate'
+    likeWeasel: 'weasel'
+    likeBird: 'bird'
+    likeOther: 'other'
+    patternSolid: 'solid'
+    patternStripes: 'stripes'
+    patternBands: 'bands'
+    patternSpots: 'spots'
+    coatTanyellow: 'tan/yellow'
+    coatRed: 'red'
+    coatBrown: 'brown'
+    coatWhite: 'white'
+    coatGray: 'gray'
+    coatBlack: 'black'
+    hornsStraight: 'straight'
+    hornsCurved: 'curved'
+    hornsSpiral: 'spiral'
+    hornsUshaped: 'u-shaped'
+    tailSmooth: 'smooth'
+    tailBushy: 'bushy'
+    tailTufted: 'tufted'
+    tailLong: 'long'
+    tailShort: 'short'
+    buildStocky: 'stocky'
+    buildLanky: 'lanky'
+    buildLarge: 'large'
+    buildSmall: 'small'
+    buildLowslung: 'low-slung'
+
 
   profile:
     header: "Your Profile"
