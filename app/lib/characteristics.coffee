@@ -46,7 +46,6 @@ module.exports = [
       new Value id: 'hornsCurved', label: translate 'span', 'characteristicValues.hornsCurved'
       new Value id: 'hornsSpiral', label: translate 'span', 'characteristicValues.hornsSpiral'
       new Value id: 'hornsUshaped', label: translate 'span', 'characteristicValues.hornsUshaped'
-
     ]
 
   new Characteristic
@@ -58,7 +57,6 @@ module.exports = [
       new Value id: 'tailTufted', label: translate 'span', 'characteristicValues.tailTufted'
       new Value id: 'tailLong', label: translate 'span', 'characteristicValues.tailLong'
       new Value id: 'tailShort', label: translate 'span', 'characteristicValues.tailShort'
-
     ]
 
   new Characteristic
@@ -70,6 +68,5 @@ module.exports = [
       new Value id: 'buildLarge', label: translate 'span', 'characteristicValues.buildLarge'
       new Value id: 'buildSmall', label: translate 'span', 'characteristicValues.buildSmall'
       new Value id: 'buildLowslung', label: translate 'span', 'characteristicValues.buildLowslung'
-
     ]
 ]
