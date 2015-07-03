@@ -100,9 +100,6 @@ module.exports =
     buffalo:
       label:'Buffalo'
       description:'Large, cattlelike animal with short legs and a long, tufted tail, dark brown to black fur, large, droopy ears, and a broad muzzle. Both sexes have U-shaped horns, but males horns form a fused shield on the top of their heads. '
-    bushbaby:
-      label:'Bushbaby'
-      description:'Very small primate covered in gray fur that is darker around the eyes and lighter on the face and underbelly. It has huge brown eyes, large, round ears, and a mouselike nose. Its paws are bare and it has long, thin fingers.'
     bushbuck:
       label:'Bushbuck'
       description:'Medium-sized antelope with tan to chestnut brown fur with thin white stripes and spots on their flanks. Males are shaggy with darker fur and thick, spiral horns. Females are light tan and slender.'
@@ -127,18 +124,12 @@ module.exports =
     elephant:
       label:'Elephant'
       description:'Huge, leathery, gray-skinned mammal with large, floppy ears and thick, strong legs. It has a short, tufted tail and a long, thick trunk. Some elephants of both sexes have large, white tusks, but some individuals are born without tusks or have only one tusk. '
-    elephantShrew:
-      label:'Elephant Shrew'
-      description:'Tiny brown-furred rodent with a very long, thin snout and a long, thin, hairless tail. It has large ears and large, black eyes that are ringed with white. '
     genet:
       label:'Genet'
       description:'Small, slender animal with tan-gray fur, large, ringed spots, a long, thick, black-ringed tail, and a white underbelly. It has a black stripe down the spine and a pointy muzzle. '
     groundHornbill:
       label:'Ground Hornbill'
       description:'Large, stocky black bird with a red face, long, black beak, and red flaps of skin on its throat.'
-    grysbok:
-      label:'Grysbok'
-      description:'Small, stocky antelope with coarse, tan to gray fur and large black eyes. Its large ears have a dark labyrinth pattern on the inside. Males have short, straight horns.'
     hare:
       label:'Hare'
       description:'Large rabbitlike animal with very long ears. There are two hare species in Gorongosa. The savanna hare has gray fur with a lighter brown underbelly, while the scrub hare is darker gray and has a white underbelly.'
@@ -190,9 +181,9 @@ module.exports =
     oribi:
       label:'Oribi'
       description:'Small, deerlike antelope with a long, slender neck, brownish fur with a white underbelly, white around the eyes and muzzle, and distinctive black spots below the ears. Males have short, straight horns.'
-    palmCivet:
-      label:'Palm civet'
-      description:'Small mammal with a pointy face, short legs, a long body, and a very long tail. Palm civets have brown-gray fur with darker spots and a ringed tail.'
+    otter:
+      label:'Otter'
+      description:'Small, sleek mammal with a long body, short legs, and brown-gray fur. Otters have webbed feet, small, round ears, and a thick tail. There are two otter species in Gorongosa. The Cape clawless otter is lighter brown has a pale underbelly, while the spotted-necked otter is smaller and has darker fur with white spots on the neck.'
     pangolin:
       label:'Pangolin'
       description:'Small, stocky animal with short legs and a long, thick tail. The pangolin is covered with hard, armored, brown scales. It has a small, pointy face and large claws.'
@@ -220,12 +211,6 @@ module.exports =
     serval:
       label:'Serval'
       description:'Medium-sized cat with long legs, a long neck, a lanky body, yellow-tan fur with black spots, very large ears, a long, striped tail, and black stripes around the neck, nose, and eyes.'
-    steenbok:
-      label:'Steenbok'
-      description:'Small, slender antelope with tan to reddish fur and extremely large ears. It has very large, black eyes with a white ring of fur and black glands around their eyes. Males have short, straight horns.'
-    suni:
-      label:'Suni'
-      description:'Very small antelope with thin legs, a robust body, and reddish-brown to chestnut brown fur that is darker on the back. Their underbelly and inner legs are white, and their eyes are ringed with dark circles. Males have short, straight horns.'
     vervetMonkey:
       label:'Vervet Monkey'
       description:'Small, gray-furred monkey whose face is black and ringed in white fur. Its hands, feet, and ears are also black, and it has a very long, black-tipped tail. '
@@ -253,7 +238,6 @@ module.exports =
     zebra:
       label:'Zebra'
       description:'Horselike animal with short, white fur and distinctive black stripes. The mane is striped and sticks up vertically along the neck. The muzzle, nose, and tufted tail are black.'
-
 
 
 
