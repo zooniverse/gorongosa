@@ -355,6 +355,8 @@ module.exports =
     coat: 'Coat'
     tail: 'Tail'
     build: 'Build'
+    pattern: 'Pattern'
+    horns: 'Horns'
 
   characteristicValues:
     likeCatdog: 'cat/dog'
