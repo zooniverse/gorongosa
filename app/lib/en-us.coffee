@@ -84,8 +84,117 @@ module.exports =
     identify: 'Identify'
 
   differences:
-    bearBlack:
-      amphibiansAndReptiles: 'Really hard to confuse these two, but somehow people manage it.'
+    aardvark:
+      pangolin: 'A pangolin is covered in scales while an aardvark has brown fur. It also has a shorter, pointier snout than an aardvark.'
+    baboon:
+      samangoMonkey: 'A samango monkey has bluish-gray fur while a baboon has yellow-brown fur. It also has a dark face with prominent fur on the cheeks.'
+    baboon:
+      vervetMonkey: 'A vervet monkey is much smaller than a baboon with a black face and light gray fur.'
+    buffalo:
+      wildebeest: 'A wildebeest is more slender than a buffalo with a long, narrow face and a beard.'
+    bushbuck:
+      reedbuck: 'A reedbuck has solid tan fur without white spots or stripes. Its horns are ringed and it has a large, black spot below the ears.'
+    bushbuck:
+      nyala: 'A nyala female has prominent vertical white stripes and white markings between the eyes, while a bushbuck female has lighter stripes and more prominent spots.'
+    bushpig:
+      warthog: 'A warthog is a slate gray color with prominent warts on the sides of its face and larger tusks than a bushpig.'
+    caracal:
+      lionFemale: 'A lion is larger than a caracal with rounded ears, no white or black markings on the face or ears, and its fur is a lighter golden-yellow color.'
+    civet:
+      genet: 'A genet is more slender than a civet with a much longer, bushier tail. '
+    duiker:
+      oribi: 'An oribi is more slender and taller than a duiker with a flat back, white underbelly, and prominent black spots below the ears. '
+    eland:
+      hartebeest: 'A hartebeest is a taller and more slender than an eland with reddish fur, narrow face, and short, spiral horns.'
+    eland:
+      kudu: 'A kudu is taller and less ox-like than an eland, it has massive spiral horns and lacks a dewlap on the throat.'
+    genet:
+      civet: 'A civet is stockier than a genet with a much shorter tail and a dark mask on the face.'
+    hartebeest:
+      eland: 'An eland is more stocky and ox-like than a hartebeest with long, straight horns that twist. It has a dewlap below the neck.'
+    hartebeest:
+      wildebeest: 'A wildebeest is dark gray-brown with a mane and beard. Its horns are longer than a hartebeest.'
+    hartebeest:
+      kudu: 'A kudu is stockier than a hartebeest with tan-gray fur, vertical stripes, and the males have manes and massive spiral horns.'
+    hippopotamus:
+      warthog: 'A warthog is much smaller than a hippopotamus with horns and prominent warts on the face.'
+    hyena:
+      wildDog: 'A wild dog is more slender than a hyena with patchy black, orange, and white fur and a flat back.'
+    impala:
+      bushbuck: 'A bushbuck has vertical white stripes and spots on the flanks as well as a rounded back.'
+    impala:
+      reedbuck: 'A reedbuck has solid tan fur without horizontal bands. Its horns are curved and ringed and it has large, black spots below the ears.'
+    jackal:
+      wildDog: 'A wild dog is more larger than a jackal with patchy black, orange, and white fur.'
+    kudu:
+      eland: 'An eland is more stocky and ox-like than a kudu with long, straight horns that twist. It has a dewlap below the neck.'
+    kudu:
+      hartebeest: 'A hartebeest is more slender than a kudu with reddish fur, narrow face, and short, spiral horns.'
+    kudu:
+      nyala: 'A nyala is smaller than a kudu and females are more reddish-brown while males are chestnut with orange legs.'
+    leopard:
+      lionFemale: 'A lion has solid golden-tan fur without dark spots. '
+    leopard:
+      lionCub: 'A lion cub is small with solid golden-tan fur without dark spots. '
+    leopard:
+      serval: 'A serval is much smaller and lankier than a leopard with pointy ears, a small face, and a bushy tail.'
+    lionCub:
+      lionFemale: 'A female lion is much larger than a cub.'
+    lionCub:
+      leopard: 'A leopard is much larger than a lion cub and it has dark spots.'
+    lionFemale:
+      lionCub: 'A lion cub is much smaller than an adult female lion.'
+    lionFemale:
+      caracal: 'A caracal has pointy ears, reddish-tan fur, and white and black markings on the face.'
+    lionFemale:
+      leopard: 'A leopard has dark black spots.'
+    mongoose:
+      weasel: 'The weasel species in Gorongosa are skunklike with black and white fur.'
+    nyala:
+      kudu: 'A kudu is larger than a nyala with grayish-tan fur. Males have shaggy beards and massive, spiral horns.'
+    oribi:
+      duiker: 'A duiker is stockier than an oribi with a rounded back. The common duiker has a dark stripe on its nose, while the red duiker has reddish fur and the blue duiker has bluish-gray fur.'
+    otter:
+      honeyBadger: 'A honey badger has a distinct white patch on its back and is stockier than an otter'
+    otter:
+      mongoose: 'A mongoose is smaller and more slender than an otter, with a long thin tail.'
+    otter:
+      weasel: 'The weasel species in Gorongosa are skunklike with black and white fur.'
+    pangolin:
+      aardvark: 'An aardvark has brown fur and a long, flat snout.'
+    reedbuck:
+      bushbuck: 'A bushbuck has vertical white stripes and spots on the flanks as well as a rounded back.'
+    reedbuck:
+      impala: 'An impala has horizontal bands and males have large, spiral horns.'
+    samangoMonkey:
+      baboon: 'A baboon has yellow-brown fur and a light colored face.'
+    samangoMonkey:
+      vervetMonkey: 'A vervet monkey is much smaller than a samango monkey with a black face and light gray fur.'
+    serval:
+      leopard: 'A leopard is much larger and stockier than a serval and it has a round face and a smooth tail.'
+    serval:
+      wildCat: 'A wildcat is smaller and stockier than a serval and resembles a house cat.'
+    vervetMonkey:
+      baboon: 'A baboon is larger than a vervet monkey with yellow-brown fur and a light colored face.'
+    vervetMonkey:
+      samangoMonkey: 'A samango monkey is larger than a vervet monkey with bluish-gray fur and prominent fur on the cheeks.'
+    warthog:
+      bushpig: 'A bushpig has thick reddish-silvery fur and smaller tusks than a warthog.'
+    warthog:
+      hippopotamus: 'A hippopotamus is much larger than a warthog with a round body, face, and tiny pink ears. '
+    weasel:
+      mongoose: 'The mongoose species in Gorongosa are various shades of brown while the weasels are black and white and skunklike.'
+    wildDog:
+      hyena: 'A hyena is stockier than a wild dog with yellowish fur and light brown spots. Its back is sloped downward. '
+    wildDog:
+      jackal: 'A jackal is smaller than a wild dog with light brown and silver-black fur.'
+    wildcat:
+      serval: 'A serval is larger, taller, and more slender than a wildcat with yellow fur and black spots.'
+    wildebeest:
+      buffalo: 'A buffalo is stockier and more cattlelike than a wildebeest and lacks a beard and mane.'
+    wildebeest:
+      hartebeest: 'A hartebeest has reddish-brown fur, very short horns, and lacks a beard and mane.'
+
 
   animals:
     aardvark:
