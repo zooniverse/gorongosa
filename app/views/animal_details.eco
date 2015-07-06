@@ -53,8 +53,8 @@
     <% for label in Animal.deerAttributes: %>
       <div class="count group">
         <span class="title"><%- translate 'span', "classify.deer.#{label}" %>:</span>
-        <% countKeys = [1, 2, 3, 4, 5, '+'] %>
-        <% for count, i in [0, 1, 2, 3, 4, 5, '6+']: %>
+        <% countKeys = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, '+'] %>
+        <% for count, i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,'6+']: %>
           <label>
             <input type="radio" name="<%= label %>" value="<%= count %>" data-shortcut="<%= countKeys[i] %>" />
             <span class="label" title="[<%= countKeys[i] %>]"><%= count %></span>
@@ -66,8 +66,8 @@
   <% else: %>
     <div class="count group">
       <span class="title"><%- translate 'span', 'classify.count' %>:</span>
-      <% countKeys = [1, 2, 3, 4, 5, '+'] %>
-      <% for count, i in [1, 2, 3, 4, 5, '6+']: %>
+      <% countKeys = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, '+'] %>
+      <% for count, i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, '11+']: %>
         <label>
           <input type="radio" name="count" value="<%= count %>" data-shortcut="<%= countKeys[i] %>" />
           <span class="label" title="[<%= countKeys[i] %>]"><%= count %></span>
@@ -79,8 +79,8 @@
 
   <div class="behavior group">
     <span class="title"><%- translate 'span', 'classify.behavior' %>:</span>
-    <% behaviorKeys = ['U', 'D', 'N', 'V'] %>
-    <% for behavior, i in ['headUp', 'headDown', 'neither', 'notVisible']: %>
+    <% behaviorKeys = ['U', 'D', 'N', 'V', 'I'] %>
+    <% for behavior, i in ['standing', 'moving', 'eating', 'resting', 'interacting']: %>
       <label>
         <input type="radio" name="behavior" value="<%= behavior %>" data-shortcut="<%= behaviorKeys[i] %>" />
         <span class="label" title="[<%= behaviorKeys[i] %>]"><%- translate 'span', "classify.behaviors.#{behavior}" %></span>

@@ -1,5 +1,5 @@
 {
-  "name": "wisconsin-zoo",
+  "name": "gorongosa",
   "version": "0.0.1",
   "dependencies": {
     "haw": "~0.5.0",
@@ -12,6 +12,6 @@
   "scripts": {
     "start": "haw serve --port 6001",
     "deploy-to-staging": "haw build && publisssh ./build demo.zooniverse.org/gorongosa && rm -rf ./build",
-    "deploy": "haw build && publisssh ./build zooniverse-static/www.snapshotwisconsin.org && rm -rf ./build"
+    "deploy": "haw build && publisssh ./build zooniverse-static/www.gorongosa.org && rm -rf ./build"
   }
 }
