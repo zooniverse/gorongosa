@@ -7,7 +7,7 @@ animalCounts = require '../lib/animal_counts'
 
 # The order of these values must match the order in the spreadsheet.
 values = [
-  'likeCatDog', 'likeCowHorse', 'likeAntelopeDeer', 'likePrimate', 'likeWeasel', 'likeBird', 'likeOther'
+  'likeCatdog', 'likeCowhorse', 'likeAntelopedeer', 'likePrimate', 'likeWeasel', 'likeBird', 'likeOther'
   'patternSolid', 'patternStripes', 'patternBands', 'patternSpots'
   'coatTanYellow', 'coatRed', 'coatBrown', 'coatWhite', 'coatGray', 'coatBlack'
   'hornsStraight', 'hornsCurved', 'hornsSpiral', 'hornsUshaped'
