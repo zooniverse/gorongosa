@@ -5,7 +5,6 @@ columnize = require '../lib/columnize'
 AnimalDetails = require './animal_details'
 getPhysicallyAdjacentSibling = require '../lib/get_physically_adjacent_sibling'
 SlideTutorial = require 'slide-tutorial'
-slides = require '../lib/tutorial_slides'
 
 class AnimalSelector extends Controller
   set: null
@@ -17,8 +16,6 @@ class AnimalSelector extends Controller
     'keydown input[name="search"]': 'onSearchKeyDown'
     'keydown .selection-area': 'onSelectionAreaKeyDown'
     'click [data-animal]': 'onAnimalItemClick'
-    'click button[name="clear-filters"]': 'onClickClearFilters'
-    'click button[name="start-tutorial"]': 'onClickStartTutorial'
 
   elements:
     'input[name="search"]': 'searchInput'
@@ -37,9 +34,6 @@ class AnimalSelector extends Controller
 
     @onSetFilter @set.items
     @onSetSearch @set.items
-
-    @slideTutorial = new SlideTutorial
-      slides: slides
 
   createFilterMenus: ->
     for characteristic in @characteristics
@@ -140,20 +134,9 @@ class AnimalSelector extends Controller
   onDetailsRelease: =>
     @classification.annotate inSelection: null, true
 
-  onClickClearFilters: ->
-    @clearFilters()
-
   clearFilters: =>
     @set.filter {}, true
     @searchInput.val ''
     @searchInput.trigger 'keydown'
-
-  handleFirstVisit: ->
-    if @firstVisit
-      @slideTutorial.start()
-      @firstVisit = false
-
-  onClickStartTutorial: ->
-    @slideTutorial.start()
 
 module.exports = AnimalSelector

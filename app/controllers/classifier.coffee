@@ -22,14 +22,15 @@ class Classifier extends Controller
   constructor: ->
     super
 
-    @subjectViewer = new SubjectViewer
-    @el.append @subjectViewer.el
-
     @animalSelector = new AnimalSelector
       set: animals
       characteristics: characteristics
       itemController: AnimalMenuItem
     @el.append @animalSelector.el
+
+    @subjectViewer = new SubjectViewer
+      animalSelector: @animalSelector
+    @el.append @subjectViewer.el
 
     User.on 'change', @onUserChange
     Subject.on 'select', @onSubjectSelect
@@ -89,8 +90,8 @@ class Classifier extends Controller
     subject.select()
 
   onUserChange: (e, user) =>
-    @animalSelector.firstVisit = true unless user?.classification_count
-    @animalSelector.handleFirstVisit() if @el.hasClass 'active'
+    @subjectViewer.firstVisit = true unless user?.classification_count
+    @subjectViewer.handleFirstVisit() if @el.hasClass 'active'
 
     Subject.next()
 

@@ -57,4 +57,10 @@
       <a href="<%= @subject.pinterestHref() %>" target="_blank"><i rel="pin"></i></a>
     </span>
   </div>
+  
+  <div class="aux">
+    <button name="clear-filters"><%- translate 'span', 'classify.clearFilters' %></button>
+    <button name="start-tutorial"><%- translate 'span', 'classify.startTutorial' %></button>
+  </div>
+
 </div>

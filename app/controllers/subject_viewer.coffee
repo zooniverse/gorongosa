@@ -3,6 +3,7 @@ template = require '../views/subject_viewer'
 AnnotationItem = require './annotation_item'
 Subject = require 'zooniverse/models/subject'
 splits = require '../lib/splits'
+slides = require '../lib/tutorial_slides'
 
 class SubjectViewer extends Controller
   classification: null
@@ -17,6 +18,8 @@ class SubjectViewer extends Controller
     'change input[name="nothing"]': 'onChangeNothingCheckbox'
     'click button[name="finish"]': 'onClickFinish'
     'click button[name="next"]': 'onClickNext'
+    'click button[name="clear-filters"]': 'onClickClearFilters'
+    'click button[name="start-tutorial"]': 'onClickStartTutorial'
 
   elements:
     '.subject-images figure': 'figures'
@@ -32,6 +35,9 @@ class SubjectViewer extends Controller
     @playTimeouts = []
     @el.attr tabindex: 0
     @setClassification @classification
+
+    @slideTutorial = new SlideTutorial
+      slides: slides
 
   setClassification: (classification) ->
     @el.removeClass 'finished'
@@ -90,5 +96,16 @@ class SubjectViewer extends Controller
 
   onClickNext: ->
     Subject.next()
+
+  handleFirstVisit: ->
+    if @firstVisit
+      @slideTutorial.start()
+      @firstVisit = false
+
+  onClickStartTutorial: ->
+    @slideTutorial.start()
+
+  onClickClearFilters: ->
+    @animalSelector.clearFilters()
 
 module.exports = SubjectViewer
