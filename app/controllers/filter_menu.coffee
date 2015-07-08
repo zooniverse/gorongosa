@@ -48,7 +48,7 @@ class FilterMenu extends Controller
 
   onValueClick: ({currentTarget}) ->
     value = $(currentTarget).val()
-    @filterSetForValue(value)    
+    @filterSetForValue(value)
     @close()
 
   filterSetForValue: (value) ->
@@ -56,7 +56,6 @@ class FilterMenu extends Controller
     result[@characteristic.id] = value
     @set.filter result, false
    
-
   onClearClick: ->
     result = {}
     result[@characteristic.id] = null
