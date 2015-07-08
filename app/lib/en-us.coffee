@@ -155,7 +155,7 @@ module.exports =
     oribi:
       duiker: 'A duiker is stockier than an oribi with a rounded back. The common duiker has a dark stripe on its nose, while the red duiker has reddish fur and the blue duiker has bluish-gray fur.'
     otter:
-      honeyBadger: 'A honey badger has a distinct white patch on its back and is stockier than an otter'
+      honeybadger: 'A honey badger has a distinct white patch on its back and is stockier than an otter'
     otter:
       mongoose: 'A mongoose is smaller and more slender than an otter, with a long thin tail.'
     otter:
@@ -248,7 +248,7 @@ module.exports =
     hippopotamus:
       label:'Hippopotamus'
       description:'Massive and low to the ground with short legs, small ears, gray to pink skin, a wide muzzle, and a short tail with a bristly tassel.'
-    honeyBadger:
+    honeybadger:
       label:'Honey Badger'
       description:'Small, stocky mammal with short legs and a wide body. The lower half of the body is covered in black fur, and the head, back, and the top of the tail are covered in solid white-gray fur. '
     human:

@@ -19,7 +19,7 @@ animalCounts =
     'hare' : 3
     'hartebeest' : 3
     'hippopotamus' : 3
-    'honeyBadger' : 3
+    'honeybadger' : 3
     'human' : 3
     'hyena' : 3
     'impala' : 3

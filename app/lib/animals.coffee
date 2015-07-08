@@ -12,7 +12,7 @@ values = [
   'coatTanYellow', 'coatRed', 'coatBrown', 'coatWhite', 'coatGray', 'coatBlack'
   'hornsStraight', 'hornsCurved', 'hornsSpiral', 'hornsUshaped'
   'tailSmooth', 'tailBushy', 'tailTufted', 'tailLong', 'tailShort'
-  'buildStocky', 'buildLanky', 'buildLarge', 'buildSmall', 'buildLowSlung'
+  'buildStocky', 'buildLanky', 'buildLarge', 'buildSmall', 'buildLowslung'
 ]
 
 
@@ -41,7 +41,7 @@ animalCharacteristics = [
   {hare: [0,0,0,0,0,0,1,1,0,0,0,1,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,1,1]}
   {hartebeest: [0,1,1,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,1,1,0,0,0,1,1,0,1,1,1,0,0]}
   {hippopotamus: [0,1,0,0,0,0,1,1,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,0,0,1,1,0,1,0,1]}
-  {honeyBadger: [1,0,0,0,1,0,0,1,0,1,0,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,1,0,0,1,1]}
+  {honeybadger: [1,0,0,0,1,0,0,1,0,1,0,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,1,0,0,1,1]}
   {human: [0,0,0,1,0,0,1,1,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,0]}
   {hyena: [1,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,1,0,0,0,1,1,0,0,0]}
   {impala: [0,0,1,0,0,0,0,1,0,1,0,1,1,1,1,0,1,1,1,1,0,0,1,0,0,1,0,1,1,0,0]}
