@@ -16,6 +16,7 @@ class AnimalSelector extends Controller
     'keydown input[name="search"]': 'onSearchKeyDown'
     'keydown .selection-area': 'onSelectionAreaKeyDown'
     'click [data-animal]': 'onAnimalItemClick'
+    'click button[name="clear-filters"]': 'onClickClearFilters'
 
   elements:
     'input[name="search"]': 'searchInput'
@@ -133,6 +134,9 @@ class AnimalSelector extends Controller
   #TODO This seems to create a second inSelection annotation which seems like strange thing
   onDetailsRelease: =>
     @classification.annotate inSelection: null, true
+
+  onClickClearFilters: ->
+    @clearFilters()
 
   clearFilters: =>
     @set.filter {}, true
