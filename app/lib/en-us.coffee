@@ -87,9 +87,9 @@ module.exports =
     aardvark:
       pangolin: 'A pangolin is covered in scales while an aardvark has brown fur. It also has a shorter, pointier snout than an aardvark.'
     baboon:
-      samangoMonkey: 'A samango monkey has bluish-gray fur while a baboon has yellow-brown fur. It also has a dark face with prominent fur on the cheeks.'
+      samangomonkey: 'A samango monkey has bluish-gray fur while a baboon has yellow-brown fur. It also has a dark face with prominent fur on the cheeks.'
     baboon:
-      vervetMonkey: 'A vervet monkey is much smaller than a baboon with a black face and light gray fur.'
+      vervetmonkey: 'A vervet monkey is much smaller than a baboon with a black face and light gray fur.'
     buffalo:
       wildebeest: 'A wildebeest is more slender than a buffalo with a long, narrow face and a beard.'
     bushbuck:
@@ -166,18 +166,18 @@ module.exports =
       bushbuck: 'A bushbuck has vertical white stripes and spots on the flanks as well as a rounded back.'
     reedbuck:
       impala: 'An impala has horizontal bands and males have large, spiral horns.'
-    samangoMonkey:
+    samangomonkey:
       baboon: 'A baboon has yellow-brown fur and a light colored face.'
-    samangoMonkey:
-      vervetMonkey: 'A vervet monkey is much smaller than a samango monkey with a black face and light gray fur.'
+    samangomonkey:
+      vervetmonkey: 'A vervet monkey is much smaller than a samango monkey with a black face and light gray fur.'
     serval:
       leopard: 'A leopard is much larger and stockier than a serval and it has a round face and a smooth tail.'
     serval:
       wildCat: 'A wildcat is smaller and stockier than a serval and resembles a house cat.'
-    vervetMonkey:
+    vervetmonkey:
       baboon: 'A baboon is larger than a vervet monkey with yellow-brown fur and a light colored face.'
-    vervetMonkey:
-      samangoMonkey: 'A samango monkey is larger than a vervet monkey with bluish-gray fur and prominent fur on the cheeks.'
+    vervetmonkey:
+      samangomonkey: 'A samango monkey is larger than a vervet monkey with bluish-gray fur and prominent fur on the cheeks.'
     warthog:
       bushpig: 'A bushpig has thick reddish-silvery fur and smaller tusks than a warthog.'
     warthog:
@@ -278,7 +278,7 @@ module.exports =
     lionmale:
       label:'Lion (male)'
       description:'Large, muscular cat with short tan-yellow fur, a long, smooth tail with a tuft at the end, a lighter underbelly, and white fur under the chin. Males have a thick reddish mane that gets darker and thicker with age.'
-    mammalOther:
+    mammalother:
       label:'Mammal (other)'
       description:'There are over 70 additional species of mammals in Gorongosa that are not on this list, including bats, rats, mice, squirrels, gerbils, shrews, and hyraxes. If you find one of these mammals that is not on the list, mark it here.'
     mongoose:
@@ -308,19 +308,19 @@ module.exports =
     reptile:
       label:'Reptile'
       description:'There are over 60 species of reptiles in Gorongosa including crocodiles, snakes, lizards, chameleons, geckos, skinks, tortoises, terrapins, and turtles. This category includes any reptile that you find!'
-    sableAntelope:
+    sableantelop:
       label:'Sable Antelope'
       description:'Full-bodied, horselike antelope with a thick neck, mane, long, tufted tail, chestnut brown to black fur with white underbelly and chin, and white under the eyes with a black stripe down the nose. Both sexes have large, ringed horns that curve backward. '
-    samangoMonkey:
+    samangomonkey:
       label:'Samango Monkey'
       description:'Medium-sized monkey with long, gray, speckled fur. Its face is dark gray, while its arms and legs fade to black toward the hands and feet. It has brown eyes, a white throat and underbelly, and a long, black tail.'
-    secretaryBird:
+    secretarybird:
       label:'Secretary bird'
       description:'Large, tall bird with gray feathers on the body and black feathers on the tips of the wings and legs. Its legs are extremely long, and its face is red-orange with a white beak. It has black feathers protruding from the back of its head like a fan.'
     serval:
       label:'Serval'
       description:'Medium-sized cat with long legs, a long neck, a lanky body, yellow-tan fur with black spots, very large ears, a long, striped tail, and black stripes around the neck, nose, and eyes.'
-    vervetMonkey:
+    vervetmonkey:
       label:'Vervet Monkey'
       description:'Small, gray-furred monkey whose face is black and ringed in white fur. Its hands, feet, and ears are also black, and it has a very long, black-tipped tail. '
     vulture:

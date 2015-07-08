@@ -29,7 +29,7 @@ animalCounts =
     'lioncub' : 2
     'lionfemale' : 3
     'lionmale' : 3
-    'mammalOther' : 3
+    'mammalother' : 3
     'mongoose' : 3
     'nyala' : 3
     'oribi' : 3
@@ -39,11 +39,11 @@ animalCounts =
     'raptorother' : 3
     'reedbuck' : 3
     'reptile' : 3
-    'sableAntelope' : 3
-    'samangoMonkey' : 2
-    'secretaryBird' : 3
+    'sableantelop' : 3
+    'samangomonkey' : 2
+    'secretarybird' : 3
     'serval' : 3
-    'vervetMonkey' : 3
+    'vervetmonkey' : 3
     'vulture' : 3
     'warthog' : 3
     'waterbuck' : 3
