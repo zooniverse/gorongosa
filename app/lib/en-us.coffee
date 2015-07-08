@@ -99,7 +99,7 @@ module.exports =
     bushpig:
       warthog: 'A warthog is a slate gray color with prominent warts on the sides of its face and larger tusks than a bushpig.'
     caracal:
-      lionFemale: 'A lion is larger than a caracal with rounded ears, no white or black markings on the face or ears, and its fur is a lighter golden-yellow color.'
+      lionfemale: 'A lion is larger than a caracal with rounded ears, no white or black markings on the face or ears, and its fur is a lighter golden-yellow color.'
     civet:
       genet: 'A genet is more slender than a civet with a much longer, bushier tail. '
     duiker:
@@ -119,13 +119,13 @@ module.exports =
     hippopotamus:
       warthog: 'A warthog is much smaller than a hippopotamus with horns and prominent warts on the face.'
     hyena:
-      wildDog: 'A wild dog is more slender than a hyena with patchy black, orange, and white fur and a flat back.'
+      wilddog: 'A wild dog is more slender than a hyena with patchy black, orange, and white fur and a flat back.'
     impala:
       bushbuck: 'A bushbuck has vertical white stripes and spots on the flanks as well as a rounded back.'
     impala:
       reedbuck: 'A reedbuck has solid tan fur without horizontal bands. Its horns are curved and ringed and it has large, black spots below the ears.'
     jackal:
-      wildDog: 'A wild dog is more larger than a jackal with patchy black, orange, and white fur.'
+      wilddog: 'A wild dog is more larger than a jackal with patchy black, orange, and white fur.'
     kudu:
       eland: 'An eland is more stocky and ox-like than a kudu with long, straight horns that twist. It has a dewlap below the neck.'
     kudu:
@@ -133,20 +133,20 @@ module.exports =
     kudu:
       nyala: 'A nyala is smaller than a kudu and females are more reddish-brown while males are chestnut with orange legs.'
     leopard:
-      lionFemale: 'A lion has solid golden-tan fur without dark spots. '
+      lionfemale: 'A lion has solid golden-tan fur without dark spots. '
     leopard:
-      lionCub: 'A lion cub is small with solid golden-tan fur without dark spots. '
+      lioncub: 'A lion cub is small with solid golden-tan fur without dark spots. '
     leopard:
       serval: 'A serval is much smaller and lankier than a leopard with pointy ears, a small face, and a bushy tail.'
-    lionCub:
-      lionFemale: 'A female lion is much larger than a cub.'
-    lionCub:
+    lioncub:
+      lionfemale: 'A female lion is much larger than a cub.'
+    lioncub:
       leopard: 'A leopard is much larger than a lion cub and it has dark spots.'
-    lionFemale:
-      lionCub: 'A lion cub is much smaller than an adult female lion.'
-    lionFemale:
+    lionfemale:
+      lioncub: 'A lion cub is much smaller than an adult female lion.'
+    lionfemale:
       caracal: 'A caracal has pointy ears, reddish-tan fur, and white and black markings on the face.'
-    lionFemale:
+    lionfemale:
       leopard: 'A leopard has dark black spots.'
     mongoose:
       weasel: 'The weasel species in Gorongosa are skunklike with black and white fur.'
@@ -184,9 +184,9 @@ module.exports =
       hippopotamus: 'A hippopotamus is much larger than a warthog with a round body, face, and tiny pink ears. '
     weasel:
       mongoose: 'The mongoose species in Gorongosa are various shades of brown while the weasels are black and white and skunklike.'
-    wildDog:
+    wilddog:
       hyena: 'A hyena is stockier than a wild dog with yellowish fur and light brown spots. Its back is sloped downward. '
-    wildDog:
+    wilddog:
       jackal: 'A jackal is smaller than a wild dog with light brown and silver-black fur.'
     wildcat:
       serval: 'A serval is larger, taller, and more slender than a wildcat with yellow fur and black spots.'
@@ -203,7 +203,7 @@ module.exports =
     baboon:
       label:'Baboon'
       description:'Medium-sized primate with golden fur that is paler on the underbelly and a dark face that protrudes and widens at the nose and mouth. It has a straight brow, brown eyes, and a tail that juts out and drops.'
-    birdOther:
+    birdother:
       label:'Bird (other)'
       description:'There are about 400 bird species in Gorongosa, from small songbirds to large geese and ducks. If you find a bird that is not on the list, mark it here!'
     buffalo:
@@ -236,7 +236,7 @@ module.exports =
     genet:
       label:'Genet'
       description:'Small, slender animal with tan-gray fur, large, ringed spots, a long, thick, black-ringed tail, and a white underbelly. It has a black stripe down the spine and a pointy muzzle. '
-    groundHornbill:
+    groundhornbill:
       label:'Ground Hornbill'
       description:'Large, stocky black bird with a red face, long, black beak, and red flaps of skin on its throat.'
     hare:
@@ -269,13 +269,13 @@ module.exports =
     leopard:
       label:'Leopard'
       description:'Large, muscular cat with short, yellow fur and black, ringed spots, small, round ears, and a long, smooth tail. '
-    lionCub:
+    lioncub:
       label:'Lion (cub)'
       description:'Cubs are smaller than adults with tan-yellow fur and some darker spots, a lighter underbelly, and white fur under the chin. Cubs do not have manes.'
-    lionFemale:
+    lionfemale:
       label:'Lion (female)'
       description:'Large, muscular cat with short tan-yellow fur, a long, smooth tail, a lighter underbelly, and white fur under the chin. Females do not have manes.'
-    lionMale:
+    lionmale:
       label:'Lion (male)'
       description:'Large, muscular cat with short tan-yellow fur, a long, smooth tail with a tuft at the end, a lighter underbelly, and white fur under the chin. Males have a thick reddish mane that gets darker and thicker with age.'
     mammalOther:
@@ -299,7 +299,7 @@ module.exports =
     porcupine:
       label:'Porcupine'
       description:'Short, stocky animal with brown fur and long, black and white quills covering its back from head to tail. It has a small face with dark eyes and a blunt nose. It is often seen at night.'
-    raptorOther:
+    raptorother:
       label:'Raptor (other)'
       description:'Raptors are predatory birds with large wingspans, sharp, hooked beaks, and huge talons. In addition to vultures, Gorongosa has over 30 species of raptors, including eagles, hawks, kites, falcons, and buzzards. '
     reedbuck:
@@ -335,7 +335,7 @@ module.exports =
     weasel:
       label:'Weasel'
       description:'The two weasel species in Gorongosa are the zorilla and the African striped weasel. Both are skunklike with black fur, large white stripes along the back, and a fluffy tail. Zorillas are fluffier with three white patches on the face, while African striped weasels are smoother with a black face.'
-    wildDog:
+    wilddog:
       label:'Wild Dog'
       description:'Medium-sized, lanky doglike animal with patchy tan, black, and white fur. It has a long, black muzzle and big, round, mostly black ears.'
     wildcat:
